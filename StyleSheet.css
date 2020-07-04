@@ -22,17 +22,20 @@
         margin: 7px 1% 1% 2%;
         left: 0;
         display:inline;
+        z-index: 999;
     }
     .info {
         overflow: hidden;
+        position: absolute;
+
     }
     .front {
-        display: block;
-        margin-left: 5%;
-        margin-right: auto;
         width: 50%;
-        position: relative;
-        top: -150px;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        top: 120px;
+        left: 4%;
     }
 
     .title {
@@ -47,6 +50,7 @@
         margin-left: 35%;
         position: relative;
         left: 21%;
+        font-size: 35px;    
     }
     .frontp {
         display: block;
@@ -56,6 +60,7 @@
         top: -10px; 
         word-wrap: break-word;
         width: 44%;
+        font-size: 25px;
     }
   
   /* Change the color of links on hover */
