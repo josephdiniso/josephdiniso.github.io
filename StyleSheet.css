@@ -104,5 +104,15 @@
       margin-left: auto;
       margin-right: auto;
       width: 50%;
-      margin-top: 200px;
+      margin-top: 80px;
+      height: 700px;
+  }
+  .rectangle {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 50%;
+    background-color: rgb(51, 59, 73);
   }
