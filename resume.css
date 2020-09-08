@@ -21,19 +21,18 @@ display:inline;
 z-index: 999;
 }
 
-.topnav a {
-float: left;
-color: #f2f2f2;
-text-align: center;
-padding: 24px 30px;
-text-decoration: none;
-font-size: 12px;
-display: inline-block;
-vertical-align:top;
-position: relative;
-left: 130px;
-top: 20px;
-margin: -12px 0px 2% 0px;   
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 24px 30px;
+        text-decoration: none;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align:top;
+        position: relative;
+        left: 80px;
+        margin: -12px 0px 0.5% 0px;   
 }
 
 .topnav a:hover {
@@ -72,7 +71,7 @@ h2 { font-size: 152% }
 h3, h4 { font-size: 122%; }
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
-a { color: #990003 }
+a { color: #006cc5 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
 li { line-height: 24px; border-bottom: 1px solid #ccc; }
@@ -85,7 +84,7 @@ p.enlarge span { color: #000 }
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf { display: block; float: left; background: rgb(51, 59, 73); color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
 a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
