@@ -5,61 +5,15 @@
     <link href="StyleSheet.css" rel="stylesheet">   
     </head>
     <a href="index.html">
-    <img class="logo" border="0" alt="Home" src="default.png" width="90" height="60">
     </a>
-    <div class="topnav">
-        <ul>
-        <a href="index.html">Home</a>
-        <a class="active" href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <!-- <a href="contact.html">Contact</a> -->
-        </ul>
-  </div>
-  <div class="header">
-    <h1 class="blog_head">Projects by Joseph DiNiso</h1>
-  </div>
-  
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h1 class="blog_title">PyTetris</h1>
-        <h2 class="blog_subtitle">Tetris, coded almost entirely using the PyGame Python module</h2>
-        <iframe class="proj" width="1000" height="600" 
-        src="https://www.youtube.com/embed/_Pdo7du8bW4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <p class="frontp">Using the PyGame python library, I programmed Tetris from scratch. Eventually I wish to use a reinforcement 
-            learning model to train the game to play itself.<br>The current source code is available on github at <a href="https://github.com/josephdiniso/PyTetris" target="_blank">
-            my github</a>. Use the README for instructions on how to play it.
-        </p>
-        </div>
-        <div class="card">
-          <h1 class="blog_title">Anagrams Cheater</h1>
-          <h2 class="blog_subtitle">A Program Written to Give a Cheating Advantage in Anagrams</h2>
-          <img class="proj" src="Images/AnagramCover.png" width="1000" height="600">
-          <p class="frontp">
-            <br>Using the Python DLIB library, I created a facial landmark detector using a pretrained 
-            model. The detector places six points around the eye in designated positions. Using these landmark points
-            I then calculated the aspect ratio of the eye by taking the distance from the top of the eye to the bottom,
-            as well as the distance from the left to the right. Then dividing the vertical distance by the horizontal I was
-            able to get an aspect ratio. When the aspect ratio went below a certain threshold, for over five milliseconds,
-            then a blink would be registered.<br><br>Before running the script, the user must input an argument with the letters
-            given to them in an Anagrams game. The program then calculates the longest possible anagrams (with a six 
-            letter maximum) and displays them to the user with the longest (and most point lucrative) words appearing
-            first. When the user blinks the program will then show the next word, allowing the user to input words
-            as quickly as possible.<br><br>To see the source code and how to use the program, click 
-            <a href="https://github.com/josephdiniso/AnagramsCheat" target="_blank">here</a> and to see the rest of my Github, click
-          <a href="https://github.com/josephdiniso" target="_blank">here.</a>
-          </p>
-      </div>
-      </div>
-      <div class="card">
-        <h1 class="blog_title">PySnake</h1>
-        <h2 class="blog_subtitle">Snake, coded using Python's Pygame module</h2>
-        <iframe class="proj" width="1000" height="600" 
-        src="https://www.youtube.com/embed/eyiJHlnR_Ko" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <p class="frontp"><br>Using the PyGame Python library I wrote the game 'Snake'. In future iterations I hope to add a reinforcement learning model
-          such as Q-Learning <br>to have the game play itself and develop inhuman strategies. The current source code is available on my github at <a href="https://github.com/josephdiniso/PySnake" target="_blank">
-            my github</a>. Use the README for<br> instructions on how to play it. NOTE: The reinforcement learning model is currently in development so the code is messy.
-        </p>
-    </div>
-    </div>
-</h1tml>
+<header class="Header">
+  <h1 class="Header-text">JOSEPH DiNISO</h1>
+  <nav>
+    <ul>
+      <a class="Header-link" href="index.html">Home</a>
+      <a class="Header-link" href="projects.html">Projects</a>
+      <a class="Header-link" href="resume.html">Resume</a>
+    </ul>
+  </nav>
+  <a class="cta" href="#"><button>Contact</button></a>
+</header>
