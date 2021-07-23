@@ -90,7 +90,7 @@ button {
     font-size: 40px;
     color: #edf0f1;
     text-align: left;
-    margin-left: 10%
+    margin-left: 10%;
     /* position: absolute; */
 }
 
@@ -100,7 +100,7 @@ button {
     font-size: 40px;
     color: #edf0f1;
     text-align: left;
-    margin-left: 10%
+    margin-left: 10%;
     /* position: absolute; */
 }
 
@@ -118,6 +118,21 @@ button {
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#projects-top {
+    margin-top: -10vh;
+    height: 10vh;
+}
+
+#contact-top {
+    margin-top: -10vh;
+    height: 10vh;
+}
+
+#contact-top {
+    margin-top: -10vh;
+    height: 10vh;
 }
 
 #contact {
