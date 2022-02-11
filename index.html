@@ -7,7 +7,7 @@
     <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
     <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
     <link rel="icon" href="Images/icon.png">
-    <link href="css/StyleSheet.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,40 +20,106 @@
 </head>
 
 <body>
-    <a class="to-top" href="#header">
+    <a class="to-top" href="#">
         <img class="to-top" src="Images/up.png">
     </a>
-    <div id="header"></div>
-    <header class="Header">
-        <h1 class="Header-text">JOSEPH DiNISO</h1>
-        <nav>
-            <ul>
-                <a class="Header-link" href="#header">Home</a>
-                <a class="Header-link" href="#projects-top">Projects</a>
-                <a class="Header-link" href="https://github.com/" target="_blank">Github</a>
-                <a class="Header-link" href="Resume/JosephDiNisoResume.pdf" download>Download-Résumé</a>
-            </ul>
-        </nav>
-        <a class="cta" href="#contact-top"><button>Contact</button></a>
-    </header>
-    <div id="intro">
-        <img class="profilepic" alt="Profile" src="Images/cropped.png">
-        <p class="index-text">
-            Hello - I'm a software engineering student at Virginia Tech pursuing a focus in Machine Learning! I'm currently
-            in my senior year - graduating in the Spring of 2022 and am looking for full time opportunities in software
-            engineering roles. Feel free to check out my Github, projects, resume, or to contact me with the
-            contact button!
-        </p>
+    <div class="header"></div>
+        <header class="header">
+            <a href="#" class="header-text">JOSEPH DiNISO</a>
+            <nav>
+                <ul>
+                    <a class="header-link" href="#top">Home</a>
+                    <a class="header-link" href="#projects-top">Projects</a>
+                    <a class="header-link" href="https://github.com/josephdiniso" target="_blank">Github</a>
+                    <a class="header-link" href="Resume/JosephDiNisoResume.pdf" download>Résumé</a>
+                </ul>
+            </nav>
+            <a href="mailto: josephdiniso@gmail.com"><button>Contact</button></a>
+        </header>
+    <div class="intro">
+        <div class="intro-header">
+            <div class="intro-text">
+            <p class="introduction">
+                Hello, I'm Joseph DiNiso and I'm a software engineer
+            </p>
+            <a href="mailto: josephdiniso@gmail.com"><button>Email Me</button></a>
+            </div>
+            <img class="profilepic" alt="Profile" src="Images/cropped.png">
+        </div>
     </div>
     <div id="projects-top"></div>
-    <div id="projects">
-        <h1 class="title">PROJECTS - In Progress</h1>
+    <div class="projects">
+        <div class="background">
+            <h4>- Background</h4>
+            <h5>I am a computer engineering student at Virginia Tech in my senior year, graduating in
+                May of 2022. I am pursuing a focus in machine learning and a secondary focus in networking and cybersecurity.
+                I am interested in fields such as cloud software development, machine learning, computer vision, and am
+                looking to grow as much as I can.
+            </h5>
+        </div>
+        <div class="skills">
+            <h4>- Skills</h4>
+                <ul>
+                    <li>Python: OpenCV, PyTorch, NumPy, and other Python libraries</li>
+                    <li>C++</li>
+                    <li>Linux: Ubuntu, Bash scripting, Git</li>
+                    <li>Computer vision, data science, machine learning</li>
+                </ul>
+        </div>
+    </div>
+    <div class="work-experience">
+        <div class="work">
+            <div class="info-group">
+                <h4>- Work Experience</h4>
+                <div class="jobs">
+                        <div class="job">
+                            <h1>Software Engineering Intern</h1>
+                            <h2>Garmin International | May-August 2021 | Raleigh, NC</h2>
+                            <h3>I worked for the Automotive OEM division of Garmin on a contract for
+                                BMW infotainment systems. I worked in a C++ environment writing production code
+                                for a Linux-based infotainment system and used Python extensively for various testing
+                                and profiling tools. In my time I helped develop code for the fisheye lens dewarping 
+                                algorithm, helping to maintain the existing codebase with bug fixes and testing.
+                            </h3>
+                        </div>
 
+                        <div class="job">
+                            <h1>Undergraduate Teaching Assistance</h1>
+                            <h2>Virginia Tech | August 2020-August 2021 | Blacksburg, VA</h2>
+                            <h3>I worked as an Undergraduate Teaching Assistance helping students in ECE 2564,
+                                an Embedded Systems course on projects and concepts. I held office hours several times
+                                weekly and would go over assigned projects with students, helping them to debug their
+                                code and add new features.
+                            </h3>
+                        </div>
+
+                        <div class="job">
+                            <h1>Machine Learning Intern</h1>
+                            <h2>Progeny Systems | May-August 2020 | Manassas, VA</h2>
+                            <h3>I worked in the Intelligent Systems Group (ISG) at Progeny Systems applying
+                                convolutional neural networks to develop a person re-identification system that would be
+                                used to cluster multiple images of people together.
+                            </h3>
+                        </div>
+                </div>
+            </div>
+            <div class="info-group">
+                <h4>- Education</h4>
+                <div class="jobs">
+                    <div class="job">
+                        <h1>Virginia Tech, <i>Blacksburg, VA</i> - B.S. in Computer Engineering</h1>
+                        <h2>Graduating May 2022 | GPA: <b>3.83</b>, In-Major: <b>3.82</b>  | Blacksburg, VA</h2>
+                        <h3>Pursuing a degree in Computer Enginering with a focus in Machine learning and a secondary
+                            focus in Networking and Cybersecurity. Throughout my time at Virginia Tech I have held many
+                            roles such as president of Sigma Phi Delta, an academic engineering fraternity, an 
+                            Undergraduate Teaching Assistant, and research roles.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="contact-top"></div>
-    <div id="contact">
-        <h1 class="title">CONTACT - In Progress</h1>
-    </div>
+
 </body>
 
 </h1tml>

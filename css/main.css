@@ -1,0 +1,345 @@
+* {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.to-top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #888788;
+  border-radius: 60px;
+  -webkit-box-shadow: 2px 2px 3px #636363;
+          box-shadow: 2px 2px 3px #636363;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.to-top .to-top:hover {
+  background-color: #dddddd;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+  top: 0;
+  max-height: 7em;
+  padding: 30px 10% 1em 10%;
+  border-bottom: 1px solid white;
+  background-color: #24252A;
+  font-family: 'Noto Serif JP', serif;
+  color: #edf0f1;
+}
+
+.header .header-text {
+  cursor: pointer;
+  margin-right: auto;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.header .header-text:hover {
+  color: #a7a7a7;
+}
+
+.header .header-link {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0px 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #edf0f1;
+}
+
+.header .header-link:hover {
+  color: #a7a7a7;
+}
+
+.header li, .header a, .header button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.header button {
+  font-family: 'Noto Serif JP', serif;
+  padding: 9px 25px;
+  background-color: #00888b;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.header button:hover {
+  color: #a7a7a7;
+}
+
+.intro {
+  padding-top: 7em;
+  padding-bottom: 2em;
+  min-height: 60vh;
+  width: 100%;
+  border-bottom: 1px solid white;
+  background-color: #24252A;
+}
+
+.intro .profilepic {
+  width: 35%;
+}
+
+.intro .intro-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .intro-header .intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Crimson Text', serif;
+  font-weight: 800;
+  font-size: 3.8vw;
+  color: #edf0f1;
+  text-align: center;
+  width: 35%;
+}
+
+.intro .intro-header .intro-text .introduction {
+  font-family: 'Crimson Text', serif;
+  font-weight: 800;
+  font-size: 3.8vw;
+  color: #edf0f1;
+  text-align: center;
+}
+
+.intro .intro-header .intro-text button {
+  font-family: 'Noto Serif JP', serif;
+  padding: 9px 25px;
+  background-color: #00888b;
+  border: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.intro .intro-header .intro-text button:hover {
+  color: #a7a7a7;
+}
+
+#projects-top {
+  margin-top: -10vh;
+  height: 10vh;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #cacaca;
+  border-top: 1px solid white;
+  padding-bottom: 6em;
+  padding-top: 6em;
+}
+
+.projects .background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 33%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+.projects h4 {
+  color: #666a83;
+  font-size: 1.8em;
+}
+
+.projects h5 {
+  color: #363535;
+  font-size: 1.3em;
+  font-weight: 100;
+  font-size: 1.6em;
+}
+
+.projects li {
+  color: #363535;
+  font-size: 1.3em;
+  font-weight: 100;
+  font-size: 1.6em;
+}
+
+.projects .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-width: 20%;
+  max-width: 33%;
+  margin-right: 10%;
+  margin-left: auto;
+}
+
+.work-experience {
+  background-color: #24252A;
+  padding-top: 2em;
+  padding-bottom: 6em;
+}
+
+.work-experience .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.work-experience .work .info-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 6em;
+}
+
+.work-experience .work .info-group h4 {
+  font-size: 1.6em;
+  color: #edf0f1;
+  margin-left: 10%;
+  white-space: nowrap;
+}
+
+.work-experience .work .info-group .jobs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20%;
+  margin-left: auto;
+  max-width: 40%;
+}
+
+.work-experience .work .info-group .jobs .job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 3em;
+  color: #edf0f1;
+}
+
+.work-experience .work .info-group .jobs .job h1 {
+  color: #89abb6;
+  font-size: 1.6em;
+}
+
+.work-experience .work .info-group .jobs .job h2 {
+  color: #9cacb1;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.work-experience .work .info-group .jobs .job ul {
+  margin-top: 1em;
+}
+
+.work-experience .work .info-group .jobs .job li {
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+.work-experience .work .info-group .jobs .job h3 {
+  margin-top: 1em;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=main.css.map */
