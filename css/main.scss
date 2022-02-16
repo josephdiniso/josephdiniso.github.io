@@ -18,6 +18,10 @@ $header-font: "Noto Serif JP", serif;
     font-family: Helvetica, sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 .to-top {
     position: fixed;
     width: 60px;
@@ -98,6 +102,22 @@ $header-font: "Noto Serif JP", serif;
         color: $dark-back-text-hover;
     }
 
+    @media only screen and (max-width: 880px) {
+        .header-text {
+            display: none;
+        }
+
+        nav {
+            margin-left: auto;
+
+            @media only screen and (max-width: 400px) {
+                #resume {
+                    display: none;
+                }
+            }
+        }
+    }
+
     @media only screen and (max-width: 600px) {
         button {
             display: none;
@@ -106,16 +126,6 @@ $header-font: "Noto Serif JP", serif;
         nav {
             margin-left: auto;
             margin-right: auto;
-        }
-    }
-
-    @media only screen and (max-width: 880px) {
-        .header-text {
-            display: none;
-        }
-
-        nav {
-            margin-left: auto;
         }
     }
 }
@@ -191,7 +201,6 @@ $header-font: "Noto Serif JP", serif;
     padding-bottom: 6em;
     padding-top: 6em;
 
-
     .background,
     .skills {
         display: flex;
@@ -211,7 +220,6 @@ $header-font: "Noto Serif JP", serif;
             margin-top: 2em;
         }
     }
-
 
     h4 {
         color: $header-dark;
@@ -297,6 +305,21 @@ $header-font: "Noto Serif JP", serif;
                         font-size: 1.3em;
                     }
                 }
+            }
+
+            @media only screen and (max-width: 870px) {
+                .jobs {
+                    max-width: 90%;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 870px) {
+            .info-group {
+                flex-direction: column;
             }
         }
     }
