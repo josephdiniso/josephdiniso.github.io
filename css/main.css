@@ -46,10 +46,9 @@
   top: 0;
   max-height: 7em;
   padding: 30px 10% 1em 10%;
-  border-bottom: 1px solid white;
-  background-color: #24252A;
-  font-family: 'Noto Serif JP', serif;
-  color: #edf0f1;
+  border-bottom: 1px solid #ffffff;
+  background-color: #24252a;
+  font-family: "Noto Serif JP", serif;
 }
 
 .header .header-text {
@@ -66,7 +65,7 @@
 }
 
 .header .header-link {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
@@ -80,7 +79,9 @@
   color: #a7a7a7;
 }
 
-.header li, .header a, .header button {
+.header li,
+.header a,
+.header button {
   font-weight: 500;
   font-size: 16px;
   color: #edf0f1;
@@ -88,9 +89,9 @@
 }
 
 .header button {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   padding: 9px 25px;
-  background-color: #00888b;
+  background-color: #89abb6;
   border: none;
   border-radius: 50px;
   -webkit-transition: all 0.3s ease 0s;
@@ -102,12 +103,31 @@
   color: #a7a7a7;
 }
 
+@media only screen and (max-width: 600px) {
+  .header button {
+    display: none;
+  }
+  .header nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .header .header-text {
+    display: none;
+  }
+  .header nav {
+    margin-left: auto;
+  }
+}
+
 .intro {
   padding-top: 7em;
   padding-bottom: 7em;
   width: 100%;
-  border-bottom: 1px solid white;
-  background-color: #24252A;
+  border-bottom: 1px solid #ffffff;
+  background-color: #24252a;
 }
 
 .intro .profilepic {
@@ -140,7 +160,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-weight: 800;
   font-size: 3.8vw;
   color: #edf0f1;
@@ -149,7 +169,7 @@
 }
 
 .intro .intro-header .intro-text .introduction {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-weight: 800;
   font-size: 3.8vw;
   color: #edf0f1;
@@ -157,9 +177,9 @@
 }
 
 .intro .intro-header .intro-text button {
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   padding: 9px 25px;
-  background-color: #00888b;
+  background-color: #89abb6;
   border: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -174,12 +194,12 @@
   color: #a7a7a7;
 }
 
-#projects-top {
+#background-skills-top {
   margin-top: -10vh;
   height: 10vh;
 }
 
-.projects {
+.background-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,13 +210,17 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   background-color: #cacaca;
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff;
   padding-bottom: 6em;
   padding-top: 6em;
 }
 
-.projects .background {
+.background-skills .background,
+.background-skills .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,52 +228,42 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  max-width: 33%;
-  margin-left: 10%;
+  margin-left: auto;
   margin-right: auto;
+  max-width: 33%;
 }
 
-.projects h4 {
-  color: #666a83;
+@media only screen and (max-width: 880px) {
+  .background-skills .background,
+  .background-skills .skills {
+    max-width: 80%;
+  }
+}
+
+.background-skills h4 {
+  color: #4c607a;
   font-size: 1.8em;
 }
 
-.projects h5 {
+.background-skills h5,
+.background-skills li {
   color: #363535;
   font-size: 1.3em;
   font-weight: 100;
   font-size: 1.6em;
 }
 
-.projects li {
-  color: #363535;
-  font-size: 1.3em;
-  font-weight: 100;
-  font-size: 1.6em;
-}
-
-.projects .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  min-width: 20%;
-  max-width: 33%;
-  margin-right: 10%;
-  margin-left: auto;
+@media only screen and (max-width: 880px) {
+  .background-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .work-experience {
-  background-color: #24252A;
+  background-color: #24252a;
   padding-top: 2em;
   padding-bottom: 6em;
 }
@@ -340,5 +354,62 @@
   margin-top: 1em;
   font-weight: 100;
   font-size: 1.3em;
+}
+
+.projects-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #24252a;
+}
+
+.projects-page .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #24252a;
+}
+
+.projects-page .projects h1 {
+  color: #edf0f1;
+}
+
+.projects-page .projects h2 {
+  color: #edf0f1;
+  font-weight: 600;
+}
+
+.projects-page .projects p {
+  color: #edf0f1;
+}
+
+.projects-page .projects .project-section {
+  margin-top: 2em;
+}
+
+.projects-page .projects .project {
+  margin-top: 1em;
+}
+
+.projects-page .projects .project .project-title {
+  color: #edf0f1;
+  font-size: 1.2em;
+  font-weight: 600;
+  -webkit-text-decoration: underline solid #89abb6;
+          text-decoration: underline solid #89abb6;
+  text-decoration-thickness: 2px;
 }
 /*# sourceMappingURL=main.css.map */

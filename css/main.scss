@@ -1,3 +1,15 @@
+$header-color: #24252a;
+$border-color: #ffffff;
+$dark-back-text: #edf0f1;
+$dark-back-text-hover: #a7a7a7;
+$light-background: #cacaca;
+$light-background-text: #363535;
+$header-dark: #4c607a;
+$dark-background-header: #89abb6;
+$dark-background-subheader: #9cacb1;
+$button-color: $dark-background-header;
+
+$header-font: "Noto Serif JP", serif;
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -7,18 +19,18 @@
 }
 
 .to-top {
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:rgb(136, 135, 136);
-	border-radius:60px;
-	box-shadow: 2px 2px 3px rgb(99, 99, 99);
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgb(136, 135, 136);
+    border-radius: 60px;
+    box-shadow: 2px 2px 3px rgb(99, 99, 99);
     transition: all 0.3s ease 0s;
 
     .to-top:hover {
-        background-color:rgb(221, 221, 221);
+        background-color: rgb(221, 221, 221);
     }
 }
 
@@ -33,12 +45,10 @@
     top: 0;
     max-height: 7em;
     padding: 30px 10% 1em 10%;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    background-color: #24252A;
+    border-bottom: 1px solid $border-color;
+    background-color: $header-color;
+    font-family: $header-font;
 
-    font-family: 'Noto Serif JP', serif;
-    color: #edf0f1;
-    
     .header-text {
         cursor: pointer;
         margin-right: auto;
@@ -48,34 +58,36 @@
     }
 
     .header-text:hover {
-        color: rgb(167, 167, 167);
+        color: $dark-back-text-hover;
     }
 
     .header-link {
-        font-family: 'Noto Serif JP', serif;
+        font-family: $header-font;
         font-weight: 500;
         font-size: 16px;
         text-decoration: none;
         padding: 0px 8px;
         transition: all 0.3s ease 0s;
-        color: #edf0f1;
+        color: $dark-back-text;
     }
 
     .header-link:hover {
-        color: rgb(167, 167, 167);
+        color: $dark-back-text-hover;
     }
 
-    li, a, button {
+    li,
+    a,
+    button {
         font-weight: 500;
         font-size: 16px;
-        color: #edf0f1;
+        color: $dark-back-text;
         text-decoration: none;
     }
 
     button {
-        font-family: 'Noto Serif JP', serif;
+        font-family: $header-font;
         padding: 9px 25px;
-        background-color: rgba(0,136,139,1);
+        background-color: $button-color;
         border: none;
         border-radius: 50px;
         transition: all 0.3s ease 0s;
@@ -83,7 +95,28 @@
     }
 
     button:hover {
-        color: rgb(167, 167, 167);
+        color: $dark-back-text-hover;
+    }
+
+    @media only screen and (max-width: 600px) {
+        button {
+            display: none;
+        }
+
+        nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media only screen and (max-width: 880px) {
+        .header-text {
+            display: none;
+        }
+
+        nav {
+            margin-left: auto;
+        }
     }
 }
 
@@ -91,8 +124,8 @@
     padding-top: 7em;
     padding-bottom: 7em;
     width: 100%;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    background-color: #24252A;
+    border-bottom: 1px solid $border-color;
+    background-color: $header-color;
 
     .profilepic {
         width: 35%;
@@ -104,100 +137,100 @@
         align-items: center;
         align-content: space-between;
         justify-content: center;
-        
+
         .intro-text {
             display: flex;
             flex-direction: column;
-            font-family: 'Crimson Text', serif;
+            font-family: "Crimson Text", serif;
             font-weight: 800;
             font-size: 3.8vw;
-            color: #edf0f1;
+            color: $dark-back-text;
             text-align: center;
             width: 35%;
-            
+
             .introduction {
-                font-family: 'Crimson Text', serif;
+                font-family: "Crimson Text", serif;
                 font-weight: 800;
                 font-size: 3.8vw;
-                color: #edf0f1;
+                color: $dark-back-text;
                 text-align: center;
             }
 
             button {
-                font-family: 'Noto Serif JP', serif;
+                font-family: $header-font;
                 padding: 9px 25px;
-                background-color: rgba(0,136,139,1);
+                background-color: $button-color;
                 border: none;
                 transition: all 0.3s ease 0s;
                 cursor: pointer;
                 font-weight: 500;
                 font-size: 16px;
-                color: #edf0f1;
+                color: $dark-back-text;
                 text-decoration: none;
             }
 
             button:hover {
-                color: rgb(167, 167, 167);
+                color: $dark-back-text-hover;
             }
         }
-    }    
+    }
 }
 
-#projects-top {
+#background-skills-top {
     margin-top: -10vh;
     height: 10vh;
 }
 
-.projects {
+.background-skills {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    background-color: rgb(202, 202, 202);
-    border-top: 1px solid rgb(255, 255, 255);
+    justify-content: baseline;
+    background-color: $light-background;
+    border-top: 1px solid $border-color;
     padding-bottom: 6em;
     padding-top: 6em;
 
-    .background {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        max-width: 33%;
-        margin-left: 10%;
-        margin-right: auto;
-    }
-    h4 {
-        color: rgb(102, 106, 131);
-        font-size: 1.8em;
-    }
 
-    h5 {
-        color: rgb(54, 53, 53);
-        font-size: 1.3em;
-        font-weight: 100;
-        font-size: 1.6em;
-    }
-
-    li {
-        color: rgb(54, 53, 53);
-        font-size: 1.3em;
-        font-weight: 100;
-        font-size: 1.6em;
-    }
-
+    .background,
     .skills {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        min-width: 20%;
-        max-width: 33%;
-        margin-right: 10%;
         margin-left: auto;
+        margin-right: auto;
+        max-width: 33%;
+    }
 
+    @media only screen and (max-width: 880px) {
+        .background,
+        .skills {
+            max-width: 80%;
+        }
+    }
+
+
+    h4 {
+        color: $header-dark;
+        font-size: 1.8em;
+    }
+
+    h5,
+    li {
+        color: $light-background-text;
+        font-size: 1.3em;
+        font-weight: 100;
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .background-skills {
+        flex-direction: column;
     }
 }
 
 .work-experience {
-    background-color: #24252A;
+    background-color: $header-color;
     padding-top: 2em;
     padding-bottom: 6em;
 
@@ -205,66 +238,107 @@
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        
+
         .info-group {
             display: flex;
             flex-direction: row;
             align-items: baseline;
             margin-top: 6em;
-            
-        h4 {
-            font-size: 1.6em;
-            color: #edf0f1;
-            margin-left: 10%;
-            white-space: nowrap;
-        }
-        
-        .jobs {
-            display: flex;
-            flex-direction: column;
 
-            margin-right: 20%;
-            margin-left: auto;
-            max-width: 40%;
+            h4 {
+                font-size: 1.6em;
+                color: $dark-back-text;
+                margin-left: 10%;
+                white-space: nowrap;
+            }
 
-            .job {
+            .jobs {
                 display: flex;
                 flex-direction: column;
-                align-items: baseline;
-                margin-top: 3em;
-                
-                color: #edf0f1;
-                h1 {
-                    color: #89abb6;
-                    font-size: 1.6em;
-                }
 
-                h2 {
-                    color: #9cacb1;
-                    font-size: 1.4em;
-                    font-weight: 100;
-                }
-                
-                ul {
-                    margin-top: 1em;
-                }
+                margin-right: 20%;
+                margin-left: auto;
+                max-width: 40%;
 
-                li {
-                    font-weight: 100;
-                    font-size: 1.3em;
-                }
+                .job {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    margin-top: 3em;
+                    color: $dark-back-text;
 
-                h3 {
-                    margin-top: 1em;
-                    font-weight: 100;
-                    font-size: 1.3em;
+                    h1 {
+                        color: $dark-background-header;
+                        font-size: 1.6em;
+                    }
+
+                    h2 {
+                        color: $dark-background-subheader;
+                        font-size: 1.4em;
+                        font-weight: 100;
+                    }
+
+                    ul {
+                        margin-top: 1em;
+                    }
+
+                    li {
+                        font-weight: 100;
+                        font-size: 1.3em;
+                    }
+
+                    h3 {
+                        margin-top: 1em;
+                        font-weight: 100;
+                        font-size: 1.3em;
+                    }
                 }
             }
         }
     }
+}
+
+.projects-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $header-color;
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $header-color;
+
+        h1 {
+            color: $dark-back-text;
         }
 
+        h2 {
+            color: $dark-back-text;
+            font-weight: 600;
+        }
 
+        p {
+            color: $dark-back-text;
+        }
 
+        .project-section {
+            margin-top: 2em;
+        }
 
+        .project {
+            margin-top: 1em;
+
+            .project-title {
+                color: $dark-back-text;
+                font-size: 1.2em;
+                font-weight: 600;
+                text-decoration: underline solid $dark-background-header;
+                text-decoration-thickness: 2px;
+            }
+        }
+    }
 }
