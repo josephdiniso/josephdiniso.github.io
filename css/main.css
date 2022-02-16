@@ -238,6 +238,9 @@
   .background-skills .skills {
     max-width: 80%;
   }
+  .background-skills .skills {
+    margin-top: 2em;
+  }
 }
 
 .background-skills h4 {
