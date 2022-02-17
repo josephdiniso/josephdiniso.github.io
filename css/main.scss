@@ -1,15 +1,15 @@
 $header-color: #24252a;
-$border-color: #ffffff;
-$dark-back-text: #edf0f1;
+$border-color: #f8f8f8;
+$dark-back-text: #f8f8f8;
 $dark-back-text-hover: #a7a7a7;
-$light-background: #cacaca;
+$light-background: #f8f8f8;
 $light-background-text: #363535;
 $header-dark: #4c607a;
 $dark-background-header: #89abb6;
 $dark-background-subheader: #9cacb1;
 $button-color: $dark-background-header;
-
 $header-font: "Noto Serif JP", serif;
+
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -152,8 +152,6 @@ body {
             display: flex;
             flex-direction: column;
             font-family: "Crimson Text", serif;
-            font-weight: 800;
-            font-size: 3.8vw;
             color: $dark-back-text;
             text-align: center;
             width: 35%;
@@ -164,6 +162,12 @@ body {
                 font-size: 3.8vw;
                 color: $dark-back-text;
                 text-align: center;
+            }
+
+            @media only screen and (max-width: 880px) {
+                .introduction {
+                    font-size: 4.5vw;
+                }
             }
 
             button {
@@ -183,6 +187,12 @@ body {
                 color: $dark-back-text-hover;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .intro {
+        padding-bottom: 2em;
     }
 }
 
@@ -331,40 +341,56 @@ body {
     align-items: center;
     background-color: $header-color;
 
-    .projects {
+    .projects-inner {
         display: flex;
         flex-direction: column;
         padding-top: 8em;
+        padding-bottom: 4em;
         margin-left: auto;
         margin-right: auto;
-        background-color: $header-color;
+        background-color: $light-background;
+        width: 700px;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
 
-        h1 {
-            color: $dark-back-text;
-        }
 
-        h2 {
-            color: $dark-back-text;
-            font-weight: 600;
-        }
+        .projects-text {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 500px;
+            h1 {
+                color: $light-background-text;
+                font-size: 2.2em;
+            }
 
-        p {
-            color: $dark-back-text;
-        }
-
-        .project-section {
-            margin-top: 2em;
-        }
-
-        .project {
-            margin-top: 1em;
-
-            .project-title {
-                color: $dark-back-text;
-                font-size: 1.2em;
+            h2 {
+                color: $light-background-text;
+                font-size: 2em;
                 font-weight: 600;
-                text-decoration: underline solid $dark-background-header;
-                text-decoration-thickness: 2px;
+            }
+
+            h3 {
+                font-weight: 400;
+            }
+
+            p {
+                color: $light-background-text;
+            }
+
+            .project-section {
+                margin-top: 2em;
+            }
+
+            .project {
+                margin-top: 1em;
+
+                .project-title {
+                    color: $light-background-text;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    text-decoration: underline solid $dark-background-header;
+                    text-decoration-thickness: 2px;
+                }
             }
         }
     }

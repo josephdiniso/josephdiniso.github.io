@@ -50,7 +50,7 @@ body {
   top: 0;
   max-height: 7em;
   padding: 30px 10% 1em 10%;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #f8f8f8;
   background-color: #24252a;
   font-family: "Noto Serif JP", serif;
 }
@@ -76,7 +76,7 @@ body {
   padding: 0px 8px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  color: #edf0f1;
+  color: #f8f8f8;
 }
 
 .header .header-link:hover {
@@ -88,7 +88,7 @@ body {
 .header button {
   font-weight: 500;
   font-size: 16px;
-  color: #edf0f1;
+  color: #f8f8f8;
   text-decoration: none;
 }
 
@@ -136,7 +136,7 @@ body {
   padding-top: 7em;
   padding-bottom: 7em;
   width: 100%;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #f8f8f8;
   background-color: #24252a;
 }
 
@@ -171,9 +171,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Crimson Text", serif;
-  font-weight: 800;
-  font-size: 3.8vw;
-  color: #edf0f1;
+  color: #f8f8f8;
   text-align: center;
   width: 35%;
 }
@@ -182,8 +180,14 @@ body {
   font-family: "Crimson Text", serif;
   font-weight: 800;
   font-size: 3.8vw;
-  color: #edf0f1;
+  color: #f8f8f8;
   text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+  .intro .intro-header .intro-text .introduction {
+    font-size: 4.5vw;
+  }
 }
 
 .intro .intro-header .intro-text button {
@@ -196,12 +200,18 @@ body {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  color: #edf0f1;
+  color: #f8f8f8;
   text-decoration: none;
 }
 
 .intro .intro-header .intro-text button:hover {
   color: #a7a7a7;
+}
+
+@media only screen and (max-width: 880px) {
+  .intro {
+    padding-bottom: 2em;
+  }
 }
 
 #background-skills-top {
@@ -223,8 +233,8 @@ body {
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
-  background-color: #cacaca;
-  border-top: 1px solid #ffffff;
+  background-color: #f8f8f8;
+  border-top: 1px solid #f8f8f8;
   padding-bottom: 6em;
   padding-top: 6em;
 }
@@ -310,7 +320,7 @@ body {
 
 .work-experience .work .info-group h4 {
   font-size: 1.6em;
-  color: #edf0f1;
+  color: #f8f8f8;
   margin-left: 10%;
   white-space: nowrap;
 }
@@ -340,7 +350,7 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-top: 3em;
-  color: #edf0f1;
+  color: #f8f8f8;
 }
 
 .work-experience .work .info-group .jobs .job h1 {
@@ -400,7 +410,7 @@ body {
   background-color: #24252a;
 }
 
-.projects-page .projects {
+.projects-page .projects-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,34 +419,50 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 8em;
+  padding-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #24252a;
+  background-color: #f8f8f8;
+  width: 700px;
+  border-left: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
 }
 
-.projects-page .projects h1 {
-  color: #edf0f1;
+.projects-page .projects-inner .projects-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
 }
 
-.projects-page .projects h2 {
-  color: #edf0f1;
+.projects-page .projects-inner .projects-text h1 {
+  color: #363535;
+  font-size: 2.2em;
+}
+
+.projects-page .projects-inner .projects-text h2 {
+  color: #363535;
+  font-size: 2em;
   font-weight: 600;
 }
 
-.projects-page .projects p {
-  color: #edf0f1;
+.projects-page .projects-inner .projects-text h3 {
+  font-weight: 400;
 }
 
-.projects-page .projects .project-section {
+.projects-page .projects-inner .projects-text p {
+  color: #363535;
+}
+
+.projects-page .projects-inner .projects-text .project-section {
   margin-top: 2em;
 }
 
-.projects-page .projects .project {
+.projects-page .projects-inner .projects-text .project {
   margin-top: 1em;
 }
 
-.projects-page .projects .project .project-title {
-  color: #edf0f1;
+.projects-page .projects-inner .projects-text .project .project-title {
+  color: #363535;
   font-size: 1.2em;
   font-weight: 600;
   -webkit-text-decoration: underline solid #89abb6;

@@ -7,7 +7,7 @@
     <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
     <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
     <meta name="viewport" content="width=device-width">
-    
+
     <link rel="icon" href="Images/icon.png">
     <link href="css/main.css" rel="stylesheet">
 
@@ -28,6 +28,7 @@
         <nav>
             <ul>
                 <a class="header-link" href="index.html">Home</a>
+                <a class="header-link" href="#">Projects</a>
                 <a class="header-link" href="https://github.com/josephdiniso" target="_blank">Github</a>
                 <a class="header-link" href="Resume/JosephDiNisoResume.pdf" download>Résumé</a>
             </ul>
@@ -35,17 +36,105 @@
         <a href="mailto: josephdiniso@gmail.com"><button>Contact</button></a>
     </header>
     <div class="projects-page">
-        <div class="projects">
-            <h1>Projects</h1>
-            <p>Shown here are some of my projects. (Note: Work in progress)</p>
-            <div class="project-section">
-                <h2>Favorites</h2>
-                <div class="project">
-                    <a class="project-title">Drumz</a>
+        <div class="projects-inner">
+            <div class="projects-text">
+                <h1>Projects</h1>
+                <h3>Shown here are some of my projects that I've worked on over the years. Many are
+                    extremely outdated or written poorly but I've added them to show my development process
+                    over the years.
+                </h3>
+                <div class="project-section">
+                    <h2>Favorites</h2>
+                    <h3>
+                        These are some of my favorite projects I've worked on and would like to showcase
+                        them.
+                    </h3>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/Drumz">Drumz</a>
+                        <h3>
+                            Final project for ECE4554, Computer Vision. This is an augmented reality
+                            drum simulator in which a user calibrates two colored sharpies to the computer and
+                            can then hit designated sections of the screen to play different sounds.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/DailyUpdate">DailyUpdate</a>
+                        <h3>
+                            Email service I created to automatically send me a morning update. Current information
+                            includes weather for the day, my schedule, and my planned workout. Future work will include
+                            adding an RSS news feed, to-do list integration, and a webapp to personalize the contents
+                            of the email.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/YouQR">YouQR</a>
+                        <h3>
+                            A QR code scanner built in Python as a final project for ECE4580, Digital Image Processing.
+                            Using computer vision techniques we generated a QR code scanner that reads a series of
+                            vertical bars of different heights that represent a YouTube embedded code in octal. Future
+                            iterations of this project will include adding better support for scanning at different
+                            angles
+                            using transforms to straighten the image.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/PyPong">PySnake</a>
+                        <h3>
+                            Originally built simply to learn more about Python and PyGame, by building the classic game
+                            Snake, I eventually bridged out and linked this to a Q-Learning model which trains an agent
+                            to play it. Because the inputs to the model are fairly simple, giving the agent the state of
+                            the blocks in all four directions, it will only get to around a score of 15.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="josephdiniso.github.io">This Site</a>
+                        <h3>
+                            I created this website as a way to showcase my projects and learn more about basic web
+                            development. Over the past few years I have continually changed this website as I refine my
+                            skills. While it is currently a static website written in HTML and CSS, one day I hope to
+                            learn more about dynamic web development and add to it.
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="project-section">
-                <h2>All Projects</h2>
+                <div class="project-section">
+                    <h2>Other Projects</h2>
+                    <h3>
+                        These are other projects of note. Many are outdated, have poor programming practices
+                        or are just simply unfinished.
+                    </h3>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/Snowfall">Snowfall</a>
+                        <h3>
+                            Very simple Python implementation in PyGame to simulate snow falling.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/Snowfall">Anagram Solver</a>
+                        <h3>
+                            iOS Anagrams is a GamePigeon game in which a user is given six random letters and must
+                            make as many words from those letters as possible in one minute. Longer words yield
+                            significantly more points. This project I made in Python takes as input the letters the game
+                            gives, calculates all possible anagrams and displays them to the user one at a time. The
+                            program tracks the users eyes and when the user intentionally blinks it will display the
+                            next word.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/PyTetris">PyTetris</a>
+                        <h3>
+                            Early exploration into PyGame, written in 2020. This project is a simple Tetris clone
+                            with a few bugs.
+                        </h3>
+                    </div>
+                    <div class="project">
+                        <a class="project-title" href="https://github.com/josephdiniso/PyPong">PyPong</a>
+                        <h3>
+                            Another exploration into PyGame, written in 2020. Originally this was a locally played game
+                            but I began to try to make it online multiplayer using a server I hosted. Since then it has
+                            been abandoned.
+                        </h3>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
