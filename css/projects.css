@@ -1,0 +1,79 @@
+.projects-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #24252a;
+}
+
+.projects-page .projects-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 14vh;
+  padding-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f8f8;
+  width: 45vw;
+  border-left: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
+}
+
+.projects-page .projects-inner .projects-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40vw;
+}
+
+.projects-page .projects-inner .projects-text h1 {
+  color: #363535;
+  font-size: 2.6vh;
+}
+
+.projects-page .projects-inner .projects-text h2 {
+  color: #363535;
+  font-size: 2.2vh;
+  font-weight: 600;
+}
+
+.projects-page .projects-inner .projects-text h3 {
+  font-weight: 400;
+  font-size: 1.8vh;
+}
+
+.projects-page .projects-inner .projects-text h4 {
+  font-weight: 400;
+  font-size: 1.8vh;
+  color: #313131;
+}
+
+.projects-page .projects-inner .projects-text p {
+  color: #363535;
+}
+
+.projects-page .projects-inner .projects-text .project-section {
+  margin-top: 1vh;
+}
+
+.projects-page .projects-inner .projects-text .project {
+  margin-top: 1vh;
+}
+
+.projects-page .projects-inner .projects-text .project .project-title {
+  color: #363535;
+  font-size: 2vh;
+  font-weight: 600;
+  -webkit-text-decoration: underline solid #89abb6;
+          text-decoration: underline solid #89abb6;
+}
+/*# sourceMappingURL=projects.css.map */

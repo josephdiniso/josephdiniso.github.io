@@ -1,0 +1,67 @@
+@import 'utilities.scss';
+
+.projects-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $header-color;
+
+    .projects-inner {
+        display: flex;
+        flex-direction: column;
+        padding-top: 14vh;
+        padding-bottom: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $light-background;
+        width: 45vw;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+
+        .projects-text {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 40vw;
+            h1 {
+                color: $light-background-text;
+                font-size: 2.6vh;
+            }
+
+            h2 {
+                color: $light-background-text;
+                font-size: 2.2vh;
+                font-weight: 600;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 1.8vh;
+            }
+
+            h4 {
+                font-weight: 400;
+                font-size: 1.8vh;
+                color: rgb(49, 49, 49);
+            }
+
+            p {
+                color: $light-background-text;
+            }
+
+            .project-section {
+                margin-top: 1vh;
+            }
+
+            .project {
+                margin-top: 1vh;
+
+                .project-title {
+                    color: $light-background-text;
+                    font-size: 2vh;
+                    font-weight: 600;
+                    text-decoration: underline solid $dark-background-header;
+                }
+            }
+        }
+    }
+}

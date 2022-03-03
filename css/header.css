@@ -1,0 +1,84 @@
+@media (max-aspect-ratio: 1 / 1) {
+  .header {
+    background-color: white;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  top: 0;
+  height: 10vh;
+  padding: 1vw;
+  border-bottom: 1px solid #f8f8f8;
+  background-color: #24252a;
+  font-family: "Noto Serif JP", serif;
+}
+
+.header #header-text {
+  cursor: pointer;
+  margin-right: auto;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+.header .header-text:hover {
+  color: #a7a7a7;
+}
+
+.header .header-link {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  font-size: 2.2vh;
+  text-decoration: none;
+  padding: 0px 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #f8f8f8;
+}
+
+.header .header-link:hover {
+  color: #a7a7a7;
+}
+
+.header li,
+.header a,
+.header button {
+  font-weight: 500;
+  font-size: 2vh;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.header button {
+  font-family: "Noto Serif JP", serif;
+  padding: 9px 25px;
+  background-color: #89abb6;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.header button:hover {
+  color: #a7a7a7;
+}
+/*# sourceMappingURL=header.css.map */

@@ -13,12 +13,12 @@ body {
 
 .to-top {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 4vw;
+  height: 4vw;
+  bottom: 1vw;
+  right: 1vw;
   background-color: #888788;
-  border-radius: 60px;
+  border-radius: 4vw;
   -webkit-box-shadow: 2px 2px 3px #636363;
           box-shadow: 2px 2px 3px #636363;
   -webkit-transition: all 0.3s ease 0s;
@@ -29,119 +29,17 @@ body {
   background-color: #dddddd;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  width: 100%;
-  top: 0;
-  max-height: 7em;
-  padding: 30px 10% 1em 10%;
-  border-bottom: 1px solid #f8f8f8;
-  background-color: #24252a;
-  font-family: "Noto Serif JP", serif;
-}
-
-.header .header-text {
-  cursor: pointer;
-  margin-right: auto;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  font-weight: bold;
-  font-size: 2em;
-}
-
-.header .header-text:hover {
-  color: #a7a7a7;
-}
-
-.header .header-link {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  padding: 0px 8px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  color: #f8f8f8;
-}
-
-.header .header-link:hover {
-  color: #a7a7a7;
-}
-
-.header li,
-.header a,
-.header button {
-  font-weight: 500;
-  font-size: 16px;
-  color: #f8f8f8;
-  text-decoration: none;
-}
-
-.header button {
-  font-family: "Noto Serif JP", serif;
-  padding: 9px 25px;
-  background-color: #89abb6;
-  border: none;
-  border-radius: 50px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-.header button:hover {
-  color: #a7a7a7;
-}
-
-@media only screen and (max-width: 880px) {
-  .header .header-text {
-    display: none;
-  }
-  .header nav {
-    margin-left: auto;
-  }
-}
-
-@media only screen and (max-width: 880px) and (max-width: 400px) {
-  .header nav #resume {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .header button {
-    display: none;
-  }
-  .header nav {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .intro {
-  padding-top: 7em;
-  padding-bottom: 7em;
-  width: 100%;
+  padding-top: 14vh;
+  padding-bottom: 8vh;
+  width: 100vw;
   border-bottom: 1px solid #f8f8f8;
   background-color: #24252a;
 }
 
 .intro .profilepic {
-  width: 35%;
+  width: 35vw;
+  height: 35vw;
 }
 
 .intro .intro-header {
@@ -173,45 +71,33 @@ body {
   font-family: "Crimson Text", serif;
   color: #f8f8f8;
   text-align: center;
-  width: 35%;
+  width: 35vw;
 }
 
-.intro .intro-header .intro-text .introduction {
+.intro .intro-header .intro-text p {
   font-family: "Crimson Text", serif;
   font-weight: 800;
-  font-size: 3.8vw;
+  font-size: 3.6vw;
   color: #f8f8f8;
   text-align: center;
 }
 
-@media only screen and (max-width: 880px) {
-  .intro .intro-header .intro-text .introduction {
-    font-size: 4.5vw;
-  }
-}
-
 .intro .intro-header .intro-text button {
   font-family: "Noto Serif JP", serif;
-  padding: 9px 25px;
+  padding: 1vw 2vw;
   background-color: #89abb6;
   border: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 2.5vw;
   color: #f8f8f8;
   text-decoration: none;
 }
 
 .intro .intro-header .intro-text button:hover {
   color: #a7a7a7;
-}
-
-@media only screen and (max-width: 880px) {
-  .intro {
-    padding-bottom: 2em;
-  }
 }
 
 #background-skills-top {
@@ -250,45 +136,25 @@ body {
           flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 33%;
-}
-
-@media only screen and (max-width: 880px) {
-  .background-skills .background,
-  .background-skills .skills {
-    max-width: 80%;
-  }
-  .background-skills .skills {
-    margin-top: 2em;
-  }
+  max-width: 33vw;
 }
 
 .background-skills h4 {
   color: #4c607a;
-  font-size: 1.8em;
+  font-size: 2.6vh;
 }
 
 .background-skills h5,
 .background-skills li {
   color: #363535;
-  font-size: 1.3em;
   font-weight: 100;
-  font-size: 1.6em;
-}
-
-@media only screen and (max-width: 880px) {
-  .background-skills {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  font-size: 2.2vh;
 }
 
 .work-experience {
   background-color: #24252a;
-  padding-top: 2em;
-  padding-bottom: 6em;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
 }
 
 .work-experience .work {
@@ -315,11 +181,11 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-top: 6em;
+  margin-top: 5vh;
 }
 
 .work-experience .work .info-group h4 {
-  font-size: 1.6em;
+  font-size: 2.6vh;
   color: #f8f8f8;
   margin-left: 10%;
   white-space: nowrap;
@@ -333,7 +199,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 20%;
+  margin-right: 20vw;
   margin-left: auto;
   max-width: 40%;
 }
@@ -349,18 +215,18 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-top: 3em;
+  margin-top: 1vh;
   color: #f8f8f8;
 }
 
 .work-experience .work .info-group .jobs .job h1 {
   color: #89abb6;
-  font-size: 1.6em;
+  font-size: 2.4vh;
 }
 
 .work-experience .work .info-group .jobs .job h2 {
   color: #9cacb1;
-  font-size: 1.4em;
+  font-size: 2.2vh;
   font-weight: 100;
 }
 
@@ -370,103 +236,12 @@ body {
 
 .work-experience .work .info-group .jobs .job li {
   font-weight: 100;
-  font-size: 1.3em;
+  font-size: 2vh;
 }
 
 .work-experience .work .info-group .jobs .job h3 {
   margin-top: 1em;
   font-weight: 100;
-  font-size: 1.3em;
-}
-
-@media only screen and (max-width: 870px) {
-  .work-experience .work .info-group .jobs {
-    max-width: 90%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .work-experience .work .info-group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.projects-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #24252a;
-}
-
-.projects-page .projects-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 8em;
-  padding-bottom: 4em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f8f8f8;
-  width: 700px;
-  border-left: 1px solid #f8f8f8;
-  border-right: 1px solid #f8f8f8;
-}
-
-.projects-page .projects-inner .projects-text {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-}
-
-.projects-page .projects-inner .projects-text h1 {
-  color: #363535;
-  font-size: 2.2em;
-}
-
-.projects-page .projects-inner .projects-text h2 {
-  color: #363535;
-  font-size: 2em;
-  font-weight: 600;
-}
-
-.projects-page .projects-inner .projects-text h3 {
-  font-weight: 400;
-}
-
-.projects-page .projects-inner .projects-text p {
-  color: #363535;
-}
-
-.projects-page .projects-inner .projects-text .project-section {
-  margin-top: 2em;
-}
-
-.projects-page .projects-inner .projects-text .project {
-  margin-top: 1em;
-}
-
-.projects-page .projects-inner .projects-text .project .project-title {
-  color: #363535;
-  font-size: 1.2em;
-  font-weight: 600;
-  -webkit-text-decoration: underline solid #89abb6;
-          text-decoration: underline solid #89abb6;
-  text-decoration-thickness: 2px;
+  font-size: 2vh;
 }
 /*# sourceMappingURL=main.css.map */

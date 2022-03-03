@@ -1,0 +1,72 @@
+@import "utilities.scss";
+
+@media (max-aspect-ratio: 1/1) {
+    .header {
+        background-color: white;
+    }
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    height: 10vh;
+    padding: 1vw;
+    border-bottom: 1px solid $border-color;
+    background-color: $header-color;
+    font-family: $header-font;
+
+    #header-text {
+        cursor: pointer;
+        margin-right: auto;
+        transition: all 0.3s ease 0s;
+        font-weight: bold;
+        font-size: 4vh;
+    }
+
+    .header-text:hover {
+        color: $dark-back-text-hover;
+    }
+
+    .header-link {
+        font-family: $header-font;
+        font-weight: 500;
+        font-size: 2.2vh;
+        text-decoration: none;
+        padding: 0px 8px;
+        transition: all 0.3s ease 0s;
+        color: $dark-back-text;
+    }
+
+    .header-link:hover {
+        color: $dark-back-text-hover;
+    }
+
+    li,
+    a,
+    button {
+        font-weight: 500;
+        font-size: 2vh;
+        color: $dark-back-text;
+        text-decoration: none;
+    }
+
+    button {
+        font-family: $header-font;
+        padding: 9px 25px;
+        background-color: $button-color;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: $dark-back-text-hover;
+    }
+}
