@@ -13,6 +13,9 @@
     <link href="css/projects.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
@@ -26,16 +29,16 @@
         <img class="to-top" src="Images/up.png">
     </a>
     <header class="header">
-        <a href="index.html" id="header-text">JOSEPH DiNISO</a>
-        <nav>
+        <a href="#" id="header-text">JOSEPH DiNISO</a>
+        <nav id="header-nav">
             <ul>
                 <a class="header-link" href="index.html">Home</a>
-                <a class="header-link" href="#">Projects</a>
+                <a class="header-link" href="projects.html">Projects</a>
                 <a class="header-link" href="https://github.com/josephdiniso" target="_blank">Github</a>
-                <a class="header-link" href="Resume/JosephDiNisoResume.pdf" download>Résumé</a>
+                <a id="resume" class="header-link" href="Resume/JosephDiNisoResume.pdf" download>Résumé</a>
             </ul>
         </nav>
-        <a href="mailto: josephdiniso@gmail.com"><button>Contact</button></a>
+        <a id='contact-header' href="mailto: josephdiniso@gmail.com"><button>Contact</button></a>
     </header>
     <div class="projects-page">
         <div class="projects-inner">
