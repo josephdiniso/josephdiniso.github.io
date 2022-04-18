@@ -1,4 +1,4 @@
-@import 'utilities.scss';
+@import "utilities.scss";
 
 .projects-page {
     display: flex;
@@ -14,14 +14,14 @@
         margin-left: auto;
         margin-right: auto;
         background-color: $light-background;
-        width: 55vw;
+        width: 90vw;
         border-left: 1px solid $border-color;
         border-right: 1px solid $border-color;
 
         .projects-text {
             margin-left: auto;
             margin-right: auto;
-            max-width: 50vw;
+            width: 80vw;
             h1 {
                 color: $light-background-text;
                 font-size: 2.6vh;
@@ -61,6 +61,18 @@
                     font-weight: 600;
                     text-decoration: underline solid $dark-background-header;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-aspect-ratio: 700/760) {
+    .projects-page {
+        .projects-inner {
+            width: 55vw;
+
+            .projects-text {
+                width: 50vw;
             }
         }
     }

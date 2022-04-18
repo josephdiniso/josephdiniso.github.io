@@ -10,10 +10,10 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
     <a class="to-top" href="#">
         <img class="to-top" src="Images/up.png">
     </a>
-    <header class="header">
+    <header id="header">
         <a href="#" id="header-text">JOSEPH DiNISO</a>
         <nav id="header-nav">
             <ul>
@@ -38,32 +38,33 @@
                 <a id="resume" class="header-link" href="Resume/JosephDiNisoResume.pdf" download>Résumé</a>
             </ul>
         </nav>
-        <a id='contact-header' href="mailto: josephdiniso@gmail.com"><button>Contact</button></a>
     </header>
-    <div class="intro">
-        <div class="intro-header">
-            <div class="intro-text">
-                <p>
-                    Hello, I'm Joseph DiNiso and I'm a software engineer
-                </p>
-                <a href="mailto: josephdiniso@gmail.com"><button>Email Me</button></a>
+    <div id="intro-header">
+        <div id="intro-text">
+            Hello, I'm Joseph DiNiso and I'm a software engineer
+            <div class="button-holder">
+                <a id="desktop-button" href="mailto: josephdiniso@gmail.com"><button>Email Me</button></a>
             </div>
-            <img class="profilepic" alt="Profile" src="Images/cropped.png">
+        </div>
+        <img id="profilepic" alt="Profile picture of myself in front of a waterfall" src="Images/cropped.png"
+            width="60vw">
+        <div class="button-holder">
+            <a id="mobile-button" href="mailto: josephdiniso@gmail.com"><button>Email Me</button></a>
         </div>
     </div>
-    <div id="background-skills-top"></div>
-    <div class="background-skills">
-        <div class="background">
-            <h4>- Background</h4>
-            <h5>I am a computer engineering student at Virginia Tech in my senior year, graduating in
+    <div id="background-skills">
+        <div class="info">
+            <h4>Background</h4>
+            <p>I am a computer engineering student at Virginia Tech in my senior year, graduating in
                 May of 2022. I am pursuing a focus in machine learning and a secondary focus in networking and
                 cybersecurity.
-                I am interested in fields such as cloud software development, machine learning, computer vision, and am
+                I am interested in fields such as cloud software development, machine learning, computer vision, and
+                am
                 looking to grow as much as I can.
-            </h5>
+            </p>
         </div>
-        <div class="skills">
-            <h4>- Skills</h4>
+        <div class="info">
+            <h4>Skills</h4>
             <ul>
                 <li>Python: OpenCV, PyTorch, NumPy, and other Python libraries</li>
                 <li>C++</li>
@@ -72,11 +73,11 @@
             </ul>
         </div>
     </div>
-    <div class="work-experience">
-        <div class="work">
+    <div id="work-experience">
+        <div id="work">
             <div class="info-group">
-                <h4>- Work Experience</h4>
-                <div class="jobs">
+                <h4>Work Experience</h4>
+                <div id="jobs">
                     <div class="job">
                         <h1>Software Engineering Intern</h1>
                         <h2>Garmin International | May-August 2021 | Raleigh, NC</h2>
@@ -109,13 +110,15 @@
                 </div>
             </div>
             <div class="info-group">
-                <h4>- Education</h4>
-                <div class="jobs">
+                <h4>Education</h4>
+                <div id="jobs">
                     <div class="job">
                         <h1>Virginia Tech, <i>Blacksburg, VA</i> - B.S. in Computer Engineering</h1>
                         <h2>Graduating May 2022 | GPA: <b>3.83</b>, In-Major: <b>3.82</b> | Blacksburg, VA</h2>
-                        <h3>Pursuing a degree in Computer Enginering with a focus in Machine learning and a secondary
-                            focus in Networking and Cybersecurity. Throughout my time at Virginia Tech I have held many
+                        <h3>Pursuing a degree in Computer Enginering with a focus in Machine learning and a
+                            secondary
+                            focus in Networking and Cybersecurity. Throughout my time at Virginia Tech I have held
+                            many
                             roles such as president of Sigma Phi Delta, an academic engineering fraternity, an
                             Undergraduate Teaching Assistant, and research roles.
                         </h3>

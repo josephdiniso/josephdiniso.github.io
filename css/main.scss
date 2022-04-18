@@ -1,18 +1,127 @@
-@import 'utilities.scss';
+@import "utilities.scss";
 
-* {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
+html {
+    background-color: $header-color;
 }
-
 body {
     width: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-header {
+    padding-top: 12vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $header-color;
+    width: 100vw;
+
+    border-bottom: 1px solid $border-color;
+
+    #intro-text {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 3.5vh;
+        text-align: center;
+        padding-bottom: 1vh;
+        color: $dark-back-text;
+    }
+
+    #profilepic {
+        width: 60vw;
+    }
+
+    .button-holder {
+        padding-top: 2vh;
+        display: flex;
+
+        button {
+            font-family: $header-font;
+            font-size: 3.6vh;
+            background-color: $button-color;
+            border: none;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            color: $dark-back-text;
+            text-decoration: none;
+            padding: 0.8vw;
+
+            &:hover {
+                color: $dark-back-text-hover;
+            }
+        }
+    }
+
+    #desktop-button {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#background-skills {
+    background-color: $light-background;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .info {
+        margin-left: auto;
+        margin-right: auto;
+        h4 {
+            font-size: 3.2vh;
+            text-align: center;
+        }
+
+        font-size: 2.5vh;
+        p {
+            width: 90vw;
+            text-align: center;
+        }
+    }
+}
+
+#work-experience {
+    background-color: $header-color;
+    color: $dark-back-text;
+    #work {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        .info-group {
+            border-bottom: 1px solid $border-color;
+            h4 {
+                text-align: center;
+                font-size: 3.2vh;
+            }
+            #jobs {
+                .job {
+                    h1 {
+                        font-size: 3.2vh;
+                        color: $dark-background-header;
+                        margin: 0;
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 2.8vh;
+                        color: $dark-background-subheader;
+                    }
+                    h3 {
+                        color: $dark-back-text;
+                        font-size: 2.5vh;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .to-top {
+    display: none;
     position: fixed;
     width: 4vw;
     height: 4vw;
@@ -28,163 +137,56 @@ body {
     }
 }
 
-.intro {
-    padding-top: 14vh;
-    padding-bottom: 8vh;
-    width: 100vw;
-    border-bottom: 1px solid $border-color;
-    background-color: $header-color;
-
-    .profilepic {
-        width: 35vw;
-        height: 35vw;
+@media only screen and (min-aspect-ratio: 700/760) {
+    #intro-header {
+        flex-direction: row;
+        #mobile-button {
+            display: none;
+        }
+        #desktop-button {
+            display: block;
+        }
+        #intro-text {
+            height: 20vw;
+            width: 25vw;
+            border-right: 1px solid $border-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 15vw;
+            margin-left: auto;
+        }
+        #profilepic {
+            width: 30vw;
+            margin-right: 10vw;
+            margin-left: auto;
+            padding-left: 5vw;
+        }
     }
 
-    .intro-header {
-        display: flex;
+    #background-skills {
         flex-direction: row;
-        align-items: center;
-        align-content: space-between;
-        justify-content: center;
-
-        .intro-text {
+        .info {
             display: flex;
             flex-direction: column;
-            font-family: "Crimson Text", serif;
-            color: $dark-back-text;
-            text-align: center;
-            width: 35vw;
-
+            align-items: center;
+            justify-content: center;
+            width: 40vw;
+            padding: 5vw;
             p {
-                font-family: "Crimson Text", serif;
-                font-weight: 800;
-                font-size: 3.6vw;
-                color: $dark-back-text;
-                text-align: center;
-            }
-
-            button {
-                font-family: $header-font;
-                padding: 1vw 2vw;
-                background-color: $button-color;
-                border: none;
-                transition: all 0.3s ease 0s;
-                cursor: pointer;
-                font-weight: 500;
-                font-size: 2.5vw;
-                color: $dark-back-text;
-                text-decoration: none;
-            }
-
-            button:hover {
-                color: $dark-back-text-hover;
+                width: 50vw;
             }
         }
     }
-}
 
-#background-skills-top {
-    margin-top: -10vh;
-    height: 10vh;
-}
-
-.background-skills {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: baseline;
-    background-color: $light-background;
-    border-top: 1px solid $border-color;
-    padding-bottom: 6em;
-    padding-top: 6em;
-
-    .background,
-    .skills {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 33vw;
-    }
-
-    h4 {
-        color: $header-dark;
-        font-size: 2.6vh;
-    }
-
-    h5,
-    li {
-        color: $light-background-text;
-        font-weight: 100;
-        font-size: 2.2vh;
-    }
-}
-
-.work-experience {
-    background-color: $header-color;
-    padding-top: 1vh;
-    padding-bottom: 5vh;
-
-    .work {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-
-        .info-group {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            margin-top: 5vh;
-
-            h4 {
-                font-size: 2.6vh;
-                color: $dark-back-text;
-                margin-left: 10%;
-                white-space: nowrap;
-            }
-
-            .jobs {
-                display: flex;
-                flex-direction: column;
-
-                margin-right: 20vw;
-                margin-left: auto;
-                max-width: 40%;
-
-                .job {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: baseline;
-                    margin-top: 1vh;
-                    color: $dark-back-text;
-
-                    h1 {
-                        color: $dark-background-header;
-                        font-size: 2.4vh;
-                    }
-
-                    h2 {
-                        color: $dark-background-subheader;
-                        font-size: 2.2vh;
-                        font-weight: 100;
-                    }
-
-                    ul {
-                        margin-top: 1em;
-                    }
-
-                    li {
-                        font-weight: 100;
-                        font-size: 2vh;
-                    }
-
-                    h3 {
-                        margin-top: 1em;
-                        font-weight: 100;
-                        font-size: 2vh;
-                    }
-                }
-            }
+    #work-experience {
+        #work {
+            margin-left: auto;
+            margin-right: auto;
         }
+    }
+
+    .to-top {
+        display: block;
     }
 }
