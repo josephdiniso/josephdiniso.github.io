@@ -1,6 +1,7 @@
 html {
   background-color: #24252a;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -78,8 +79,7 @@ body {
 
 #intro-header #desktop-button {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 #background-skills {
@@ -95,8 +95,6 @@ body {
 }
 
 #background-skills .info {
-  margin-left: auto;
-  margin-right: auto;
   font-size: 2.5vh;
 }
 
@@ -117,8 +115,6 @@ body {
 
 #work-experience #work {
   width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #work-experience #work .info-group {
@@ -197,8 +193,8 @@ body {
   }
   #intro-header #profilepic {
     width: 30vw;
-    margin-right: 10vw;
     margin-left: auto;
+    margin-right: 10vw;
     padding-left: 5vw;
   }
   #background-skills {

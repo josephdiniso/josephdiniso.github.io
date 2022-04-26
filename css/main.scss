@@ -3,6 +3,7 @@
 html {
     background-color: $header-color;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     width: 100%;
@@ -59,8 +60,7 @@ body {
 
     #desktop-button {
         display: none;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
     }
 }
 
@@ -71,8 +71,6 @@ body {
     flex-direction: column;
 
     .info {
-        margin-left: auto;
-        margin-right: auto;
         h4 {
             font-size: 3.2vh;
             text-align: center;
@@ -91,8 +89,6 @@ body {
     color: $dark-back-text;
     #work {
         width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
         .info-group {
             border-bottom: 1px solid $border-color;
             h4 {
@@ -159,8 +155,8 @@ body {
         }
         #profilepic {
             width: 30vw;
-            margin-right: 10vw;
             margin-left: auto;
+            margin-right: 10vw;
             padding-left: 5vw;
         }
     }
@@ -184,6 +180,7 @@ body {
         #work {
             margin-left: auto;
             margin-right: auto;
+            
         }
     }
 

@@ -11,16 +11,14 @@
         flex-direction: column;
         padding-top: 14vh;
         padding-bottom: 4em;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
         background-color: $light-background;
         width: 90vw;
         border-left: 1px solid $border-color;
         border-right: 1px solid $border-color;
 
         .projects-text {
-            margin-left: auto;
-            margin-right: auto;
+            margin-inline: auto;
             width: 80vw;
             h1 {
                 color: $light-background-text;
