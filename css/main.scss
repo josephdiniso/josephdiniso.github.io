@@ -67,19 +67,23 @@ body {
 #background-skills {
     background-color: $light-background;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-
-    .info {
-        h4 {
-            font-size: 3.2vh;
-            text-align: center;
-        }
-
-        font-size: 2.5vh;
-        p {
-            width: 90vw;
-            text-align: center;
+    #background-skills-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .info {
+            padding: 5vw;
+            font-size: 2.5vh;
+            width: 80vw;
+            h4 {
+                font-size: 3.2vh;
+                text-align: center;
+            }
+            p {
+                font-size: 2.5vh;
+                text-align: center;
+            }
         }
     }
 }
@@ -88,7 +92,7 @@ body {
     background-color: $header-color;
     color: $dark-back-text;
     #work {
-        width: 90vw;
+        width: 60vw;
         .info-group {
             border-bottom: 1px solid $border-color;
             h4 {
@@ -162,16 +166,17 @@ body {
     }
 
     #background-skills {
-        flex-direction: row;
-        .info {
-            display: flex;
-            flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        #background-skills-inner {
+            flex-direction: row;
             align-items: center;
             justify-content: center;
-            width: 40vw;
-            padding: 5vw;
-            p {
-                width: 50vw;
+            width: 75vw;
+            .info {
+                width: 33vw;
             }
         }
     }
@@ -180,7 +185,7 @@ body {
         #work {
             margin-left: auto;
             margin-right: auto;
-            
+            width: 60vw;
         }
     }
 

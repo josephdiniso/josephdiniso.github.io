@@ -85,6 +85,9 @@ body {
 #background-skills {
   background-color: #f8f8f8;
   width: 100vw;
+}
+
+#background-skills #background-skills-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,19 +95,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#background-skills .info {
+#background-skills #background-skills-inner .info {
+  padding: 5vw;
   font-size: 2.5vh;
+  width: 80vw;
 }
 
-#background-skills .info h4 {
+#background-skills #background-skills-inner .info h4 {
   font-size: 3.2vh;
   text-align: center;
 }
 
-#background-skills .info p {
-  width: 90vw;
+#background-skills #background-skills-inner .info p {
+  font-size: 2.5vh;
   text-align: center;
 }
 
@@ -114,7 +125,7 @@ body {
 }
 
 #work-experience #work {
-  width: 90vw;
+  width: 60vw;
 }
 
 #work-experience #work .info-group {
@@ -198,34 +209,37 @@ body {
     padding-left: 5vw;
   }
   #background-skills {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #background-skills .info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 40vw;
-    padding: 5vw;
+    width: 100vw;
   }
-  #background-skills .info p {
-    width: 50vw;
+  #background-skills #background-skills-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 75vw;
+  }
+  #background-skills #background-skills-inner .info {
+    width: 33vw;
   }
   #work-experience #work {
     margin-left: auto;
     margin-right: auto;
+    width: 60vw;
   }
   .to-top {
     display: block;
