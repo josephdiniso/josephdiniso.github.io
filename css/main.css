@@ -35,7 +35,6 @@ body {
 }
 
 #intro-header #intro-text {
-  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,43 +42,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 3.5vh;
   text-align: center;
   padding-bottom: 1vh;
   color: #f8f8f8;
 }
 
+#intro-header #intro-text #name-intro {
+  font-size: 2vh;
+  color: #89abb6;
+}
+
+#intro-header #intro-text #full-name {
+  font-size: 3.9vh;
+  color: #89abb6;
+}
+
+#intro-header #intro-text #position-intro {
+  text-align: center;
+  font-size: 3.9vh;
+  color: #f8f8f8;
+}
+
 #intro-header #profilepic {
   width: 60vw;
-}
-
-#intro-header .button-holder {
-  padding-top: 2vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#intro-header .button-holder button {
-  font-family: "Noto Serif JP", serif;
-  font-size: 3.6vh;
-  background-color: #89abb6;
-  border: none;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  color: #f8f8f8;
-  text-decoration: none;
-  padding: 0.8vw;
-}
-
-#intro-header .button-holder button:hover {
-  color: #a7a7a7;
-}
-
-#intro-header #desktop-button {
-  display: none;
-  margin-inline: auto;
 }
 
 #background-skills {
@@ -125,7 +110,21 @@ body {
 }
 
 #work-experience #work {
-  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  margin-inline: auto;
 }
 
 #work-experience #work .info-group {
@@ -188,7 +187,6 @@ body {
   }
   #intro-header #intro-text {
     height: 20vw;
-    width: 25vw;
     border-right: 1px solid #f8f8f8;
     display: -webkit-box;
     display: -ms-flexbox;

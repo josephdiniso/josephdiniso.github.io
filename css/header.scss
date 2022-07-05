@@ -3,9 +3,9 @@
 #header {
     background-color: $header-color;
     height: 10vh;
-    width: 100%;
     top: 0;
     position: fixed;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -23,16 +23,17 @@
         margin-right: auto;
     }
 
-    ul {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
-        a {
-            font-size: 3.6vh;
-            padding: 1vh;
-            color: white;
-            text-decoration: none;
-            text-align: center;
+    #header-nav {
+        text-align: center;
+        ul {
+            padding: 0;
+            a {
+                font-size: 5.6vw;
+                padding: 1vh;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
         }
     }
 }
@@ -43,9 +44,15 @@
             display: block;
         }
 
-        ul {
-            margin-right: 1vw;
-            margin-left: 0;
+        #header-nav {
+            ul {
+                margin-right: 1vw;
+                margin-left: 0;
+                font-size: 2vw;
+                a {
+                    font-size: 3.6vh;
+                }
+            }
         }
     }
 }
