@@ -34,6 +34,19 @@ body {
   border-bottom: 1px solid #f8f8f8;
 }
 
+#intro-header #intro-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #intro-header #intro-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +103,6 @@ body {
 
 #background-skills #background-skills-inner .info {
   padding: 5vw;
-  font-size: 2.5vh;
   width: 80vw;
 }
 
@@ -99,9 +111,19 @@ body {
   text-align: center;
 }
 
+#background-skills #background-skills-inner .info h5 {
+  font-size: 2.6vh;
+  font-weight: 600;
+  margin: 0;
+}
+
 #background-skills #background-skills-inner .info p {
   font-size: 2.5vh;
   text-align: center;
+}
+
+#background-skills #background-skills-inner .info ul {
+  font-size: 2.5vh;
 }
 
 #work-experience {
@@ -172,6 +194,10 @@ body {
   background-color: #dddddd;
 }
 
+#bottom-space {
+  height: 3vh;
+}
+
 @media only screen and (min-aspect-ratio: 700 / 760) {
   #intro-header {
     -webkit-box-orient: horizontal;
@@ -179,11 +205,12 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #intro-header #mobile-button {
-    display: none;
-  }
-  #intro-header #desktop-button {
-    display: block;
+  #intro-header #intro-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-inline: auto;
   }
   #intro-header #intro-text {
     height: 20vw;
@@ -197,14 +224,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 15vw;
+    padding-right: 5vw;
     margin-left: auto;
   }
   #intro-header #profilepic {
     width: 30vw;
-    margin-left: auto;
-    margin-right: 10vw;
-    padding-left: 5vw;
+    margin-left: 5vw;
+    margin-right: auto;
   }
   #background-skills {
     display: -webkit-box;
@@ -216,23 +242,16 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100vw;
   }
   #background-skills #background-skills-inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 75vw;
+    width: 85vw;
   }
   #background-skills #background-skills-inner .info {
-    width: 33vw;
+    width: 40vw;
   }
   #work-experience #work {
     margin-left: auto;

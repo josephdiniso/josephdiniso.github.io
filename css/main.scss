@@ -23,6 +23,12 @@ body {
 
     border-bottom: 1px solid $border-color;
 
+    #intro-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #intro-text {
         display: flex;
         flex-direction: column;
@@ -62,15 +68,26 @@ body {
         justify-content: center;
         .info {
             padding: 5vw;
-            font-size: 2.5vh;
             width: 80vw;
+
             h4 {
                 font-size: 3.2vh;
                 text-align: center;
             }
+
+            h5 {
+                font-size: 2.6vh;
+                font-weight: 600;
+                margin: 0;
+            }
+
             p {
                 font-size: 2.5vh;
                 text-align: center;
+            }
+
+            ul {
+                font-size: 2.5vh;
             }
         }
     }
@@ -131,14 +148,17 @@ body {
     }
 }
 
+#bottom-space {
+    height: 3vh;
+}
+
 @media only screen and (min-aspect-ratio: 700/760) {
     #intro-header {
         flex-direction: row;
-        #mobile-button {
-            display: none;
-        }
-        #desktop-button {
-            display: block;
+
+        #intro-inner {
+            flex-direction: row;
+            margin-inline: auto;
         }
         #intro-text {
             height: 20vw;
@@ -146,14 +166,13 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: 15vw;
+            padding-right: 5vw;
             margin-left: auto;
         }
         #profilepic {
             width: 30vw;
-            margin-left: auto;
-            margin-right: 10vw;
-            padding-left: 5vw;
+            margin-left: 5vw;
+            margin-right: auto;
         }
     }
 
@@ -161,14 +180,13 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+
         #background-skills-inner {
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 75vw;
+            width: 85vw;
+
             .info {
-                width: 33vw;
+                width: 40vw;
             }
         }
     }
