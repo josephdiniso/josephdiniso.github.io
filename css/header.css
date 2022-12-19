@@ -1,9 +1,9 @@
 #header {
   background-color: #24252a;
   height: 10vh;
-  width: 100%;
   top: 0;
   position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,14 +29,16 @@
   margin-right: auto;
 }
 
-#header ul {
-  margin-left: auto;
-  margin-right: auto;
+#header #header-nav {
+  text-align: center;
+}
+
+#header #header-nav ul {
   padding: 0;
 }
 
-#header ul a {
-  font-size: 3.6vh;
+#header #header-nav ul a {
+  font-size: 5.6vw;
   padding: 1vh;
   color: white;
   text-decoration: none;
@@ -47,9 +49,13 @@
   #header #header-text {
     display: block;
   }
-  #header ul {
+  #header #header-nav ul {
     margin-right: 1vw;
     margin-left: 0;
+    font-size: 2vw;
+  }
+  #header #header-nav ul a {
+    font-size: 3.6vh;
   }
 }
 /*# sourceMappingURL=header.css.map */

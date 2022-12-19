@@ -23,44 +23,38 @@ body {
 
     border-bottom: 1px solid $border-color;
 
-    #intro-text {
-        width: 90vw;
+    #intro-inner {
         display: flex;
         flex-direction: column;
-        font-size: 3.5vh;
+        align-items: center;
+    }
+
+    #intro-text {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         padding-bottom: 1vh;
         color: $dark-back-text;
+
+        #name-intro {
+            font-size: 2vh;
+            color: $dark-background-header;
+        }
+
+        #full-name {
+            font-size: 3.9vh;
+            color: $dark-background-header;
+        }
+
+        #position-intro {
+            text-align: center;
+            font-size: 3.9vh;
+            color: $dark-back-text;
+        }
     }
 
     #profilepic {
         width: 60vw;
-    }
-
-    .button-holder {
-        padding-top: 2vh;
-        display: flex;
-
-        button {
-            font-family: $header-font;
-            font-size: 3.6vh;
-            background-color: $button-color;
-            border: none;
-            transition: all 0.3s ease 0s;
-            cursor: pointer;
-            color: $dark-back-text;
-            text-decoration: none;
-            padding: 0.8vw;
-
-            &:hover {
-                color: $dark-back-text-hover;
-            }
-        }
-    }
-
-    #desktop-button {
-        display: none;
-        margin-inline: auto;
     }
 }
 
@@ -75,13 +69,25 @@ body {
         .info {
             font-size: 2.5vh;
             width: 80vw;
+
             h4 {
                 font-size: 3.2vh;
                 text-align: center;
             }
+
+            h5 {
+                font-size: 2.6vh;
+                font-weight: 600;
+                margin: 0;
+            }
+
             p {
                 font-size: 2.5vh;
                 text-align: center;
+            }
+
+            ul {
+                font-size: 2.5vh;
             }
         }
     }
@@ -138,30 +144,31 @@ body {
     }
 }
 
+#bottom-space {
+    height: 3vh;
+}
+
 @media only screen and (min-aspect-ratio: 700/760) {
     #intro-header {
         flex-direction: row;
-        #mobile-button {
-            display: none;
-        }
-        #desktop-button {
-            display: block;
+
+        #intro-inner {
+            flex-direction: row;
+            margin-inline: auto;
         }
         #intro-text {
             height: 20vw;
-            width: 25vw;
             border-right: 1px solid $border-color;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: 15vw;
+            padding-right: 5vw;
             margin-left: auto;
         }
         #profilepic {
             width: 30vw;
-            margin-left: auto;
-            margin-right: 10vw;
-            padding-left: 5vw;
+            margin-left: 5vw;
+            margin-right: auto;
         }
     }
 
@@ -169,7 +176,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+
         #background-skills-inner {
             flex-direction: column;
             align-items: center;

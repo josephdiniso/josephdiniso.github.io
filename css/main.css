@@ -34,8 +34,7 @@ body {
   border-bottom: 1px solid #f8f8f8;
 }
 
-#intro-header #intro-text {
-  width: 90vw;
+#intro-header #intro-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,43 +42,42 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 3.5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#intro-header #intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   padding-bottom: 1vh;
   color: #f8f8f8;
 }
 
+#intro-header #intro-text #name-intro {
+  font-size: 2vh;
+  color: #89abb6;
+}
+
+#intro-header #intro-text #full-name {
+  font-size: 3.9vh;
+  color: #89abb6;
+}
+
+#intro-header #intro-text #position-intro {
+  text-align: center;
+  font-size: 3.9vh;
+  color: #f8f8f8;
+}
+
 #intro-header #profilepic {
   width: 60vw;
-}
-
-#intro-header .button-holder {
-  padding-top: 2vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#intro-header .button-holder button {
-  font-family: "Noto Serif JP", serif;
-  font-size: 3.6vh;
-  background-color: #89abb6;
-  border: none;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  color: #f8f8f8;
-  text-decoration: none;
-  padding: 0.8vw;
-}
-
-#intro-header .button-holder button:hover {
-  color: #a7a7a7;
-}
-
-#intro-header #desktop-button {
-  display: none;
-  margin-inline: auto;
 }
 
 #background-skills {
@@ -104,7 +102,11 @@ body {
 }
 
 #background-skills #background-skills-inner .info {
+<<<<<<< HEAD
   font-size: 2.5vh;
+=======
+  padding: 5vw;
+>>>>>>> c19eebe31e2343040df82e4e3c3fc95db57ff499
   width: 80vw;
 }
 
@@ -113,9 +115,19 @@ body {
   text-align: center;
 }
 
+#background-skills #background-skills-inner .info h5 {
+  font-size: 2.6vh;
+  font-weight: 600;
+  margin: 0;
+}
+
 #background-skills #background-skills-inner .info p {
   font-size: 2.5vh;
   text-align: center;
+}
+
+#background-skills #background-skills-inner .info ul {
+  font-size: 2.5vh;
 }
 
 #work-experience {
@@ -125,7 +137,25 @@ body {
 }
 
 #work-experience #work {
+<<<<<<< HEAD
   width: 80vw;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  margin-inline: auto;
+>>>>>>> c19eebe31e2343040df82e4e3c3fc95db57ff499
 }
 
 #work-experience #work .info-group {
@@ -173,6 +203,10 @@ body {
   background-color: #dddddd;
 }
 
+#bottom-space {
+  height: 3vh;
+}
+
 @media only screen and (min-aspect-ratio: 700 / 760) {
   #intro-header {
     -webkit-box-orient: horizontal;
@@ -180,15 +214,15 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #intro-header #mobile-button {
-    display: none;
-  }
-  #intro-header #desktop-button {
-    display: block;
+  #intro-header #intro-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-inline: auto;
   }
   #intro-header #intro-text {
     height: 20vw;
-    width: 25vw;
     border-right: 1px solid #f8f8f8;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,14 +233,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 15vw;
+    padding-right: 5vw;
     margin-left: auto;
   }
   #intro-header #profilepic {
     width: 30vw;
-    margin-left: auto;
-    margin-right: 10vw;
-    padding-left: 5vw;
+    margin-left: 5vw;
+    margin-right: auto;
   }
   #background-skills {
     display: -webkit-box;
@@ -218,11 +251,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100vw;
   }
   #background-skills #background-skills-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+<<<<<<< HEAD
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
@@ -235,6 +268,14 @@ body {
   }
   #background-skills #background-skills-inner .info {
     width: 50vw;
+=======
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 85vw;
+  }
+  #background-skills #background-skills-inner .info {
+    width: 40vw;
+>>>>>>> c19eebe31e2343040df82e4e3c3fc95db57ff499
   }
   #work-experience #work {
     margin-left: auto;
