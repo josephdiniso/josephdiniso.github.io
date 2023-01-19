@@ -18,13 +18,12 @@
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #f8f8f8;
+  font-size: 2.5vh;
 }
 
 #header #header-text {
-  font-size: 3.6vh;
   text-decoration: none;
   color: #f8f8f8;
-  display: none;
   margin-left: 3vw;
   margin-right: auto;
 }
@@ -38,24 +37,22 @@
 }
 
 #header #header-nav ul a {
-  font-size: 5.6vw;
   padding: 1vh;
   color: white;
   text-decoration: none;
   text-align: center;
 }
 
-@media only screen and (min-aspect-ratio: 700 / 760) {
+@media only screen and (min-aspect-ratio: 760 / 760) {
+  #header {
+    font-size: 3.5vh;
+  }
   #header #header-text {
     display: block;
   }
   #header #header-nav ul {
     margin-right: 1vw;
     margin-left: 0;
-    font-size: 2vw;
-  }
-  #header #header-nav ul a {
-    font-size: 3.6vh;
   }
 }
 /*# sourceMappingURL=header.css.map */

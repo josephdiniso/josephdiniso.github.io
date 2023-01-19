@@ -14,11 +14,11 @@
 
     border-bottom: 1px solid $border-color;
 
+    font-size: 2.5vh;
+    
     #header-text {
-        font-size: 3.6vh;
         text-decoration: none;
         color: $dark-back-text;
-        display: none;
         margin-left: 3vw;
         margin-right: auto;
     }
@@ -28,7 +28,6 @@
         ul {
             padding: 0;
             a {
-                font-size: 5.6vw;
                 padding: 1vh;
                 color: white;
                 text-decoration: none;
@@ -38,8 +37,9 @@
     }
 }
 
-@media only screen and (min-aspect-ratio: 700/760) {
+@media only screen and (min-aspect-ratio: 760/760) {
     #header {
+        font-size: 3.5vh;
         #header-text {
             display: block;
         }
@@ -48,10 +48,6 @@
             ul {
                 margin-right: 1vw;
                 margin-left: 0;
-                font-size: 2vw;
-                a {
-                    font-size: 3.6vh;
-                }
             }
         }
     }

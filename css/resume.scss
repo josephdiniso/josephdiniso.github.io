@@ -1,0 +1,102 @@
+@import "utilities.scss";
+
+#background-skills {
+    background-color: $light-background;
+    width: 100vw;
+    #background-skills-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #resume-link {
+            padding-top: 10vh;
+        }
+        .info {
+            font-size: 2.5vh;
+            width: 80vw;
+
+            h4 {
+                font-size: 3.2vh;
+                text-align: center;
+            }
+
+            h5 {
+                font-size: 2.6vh;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            p {
+                font-size: 2.5vh;
+                text-align: center;
+            }
+
+            ul {
+                font-size: 2.5vh;
+            }
+        }
+    }
+}
+
+#work-experience {
+    background-color: $header-color;
+    color: $dark-back-text;
+    margin-inline: auto;
+    #work {
+        width: 80vw;
+        .info-group {
+            border-bottom: 1px solid $border-color;
+            h4 {
+                text-align: center;
+                font-size: 3.2vh;
+            }
+            #jobs {
+                .job {
+                    h1 {
+                        font-size: 3.2vh;
+                        color: $dark-background-header;
+                        margin: 0;
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 2.8vh;
+                        color: $dark-background-subheader;
+                    }
+                    h3 {
+                        color: $dark-back-text;
+                        font-size: 2.5vh;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-aspect-ratio: 760/760) {
+    #background-skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #background-skills-inner {
+            width: 75vw;
+            .info {
+                width: 50vw;
+            }
+        }
+    }
+
+    #work-experience {
+        #work {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60vw;
+        }
+    }
+
+    .to-top {
+        display: block;
+    }
+}
