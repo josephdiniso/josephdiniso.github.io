@@ -1,5 +1,7 @@
 @import "utilities.scss";
 
+$resume-button-color: #ddd;
+
 html {
     background-color: $header-color;
     scroll-behavior: smooth;
@@ -7,15 +9,29 @@ html {
     font-family: "Roboto";
 }
 body {
-    width: 100%;
-    margin-left: auto;
     display: flex;
     flex-direction: column;
 }
 
+#resume-button {
+    background-color: $resume-button-color;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 24px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: $light-background-text;
+
+    width: 150px;
+    margin-top: 2vh;
+}
+
 #intro-header {
-    padding-top: 12vh;
-    padding-bottom: 2vh;
+    padding-top: $header-height-plus-space;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,52 +48,33 @@ body {
             flex-direction: column;
             color: $dark-background-header;
             align-items: left;
-            max-width: 85vw;
-            margin-left: 3vw;
-            padding-bottom: 3vh;
+            max-width: 85%;
+            padding-bottom: 15px;
 
             #name-intro {
-                font-size: 3vh;
+                font-size: 20px;
             }
 
             #full-name {
-                font-size: 6vh;
+                font-size: 40px;
             }
 
             #position-intro {
-                font-size: 4vh;
+                font-size: 27px;
                 color: $dark-back-text;
             }
 
             #skills {
-                font-size: 2vh;
+                font-size: 13px;
                 color: $dark-back-text-hover;
-                line-height: 2.8vh;
+                line-height: 18px;
             }
-        }
-
-        #resume-button {
-            background-color: #ddd;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 24px;
-
-            font-size: 20px;
-            font-weight: 400;
-            color: $light-background-text;
-
-            width: 150px;
-            margin-top: 2vh;
         }
     }
 }
 
 #info-boxes {
-    margin-top: 40px;
+    margin-top: 5px;
     margin-inline: auto;
 
     .info-box-contents {
@@ -152,11 +149,10 @@ body {
     }
 }
 
-#bottom-space {
-    height: 3vh;
-}
-
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: #{$medium-width}) {
+    #intro-inner {
+        margin-left: -15vw;
+    }
     #info-boxes {
         padding-left: 7.5vw;
 
@@ -169,32 +165,18 @@ body {
 
         .info-box {
             width: 40vw;
-            background-color: pink;
-            margin-top: 25px;
             margin-right: 5vw;
         }
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: #{$large-width}) {
     #info-boxes {
         padding: 0;
-        margin: 0;
-        margin-inline: auto;
-
-        #info-box-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: space-between;
-            align-items: center;
-        }
 
         .info-box {
             width: 30vw;
             margin-inline: 1vw;
-            background-color: pink;
-            margin-top: 25px;
         }
     }
 }

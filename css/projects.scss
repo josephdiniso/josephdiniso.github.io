@@ -1,16 +1,12 @@
 @import "utilities.scss";
 
 .projects-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $header-color;
 
     .projects-inner {
         display: flex;
         flex-direction: column;
-        padding-top: 14vh;
-        padding-bottom: 4em;
+        padding-top: $header-height-plus-space;
         margin-inline: auto;
         background-color: $light-background;
         width: 90vw;
@@ -22,23 +18,24 @@
             width: 80vw;
             h1 {
                 color: $light-background-text;
-                font-size: 2.6vh;
+                font-size: 34px;
+                font-weight: 900;
             }
 
             h2 {
                 color: $light-background-text;
-                font-size: 2.2vh;
-                font-weight: 600;
+                font-size: 35px;
+                font-weight: 400;
             }
 
             h3 {
-                font-weight: 400;
-                font-size: 1.8vh;
+                font-size: 22px;
+                font-weight: 300;
             }
 
             h4 {
-                font-weight: 400;
-                font-size: 1.8vh;
+                font-weight: 500;
+                font-size: 24px;
                 color: rgb(49, 49, 49);
             }
 
@@ -55,7 +52,7 @@
 
                 .project-title {
                     color: $light-background-text;
-                    font-size: 2vh;
+                    font-size: 26px;
                     font-weight: 600;
                     text-decoration: underline solid $dark-background-header;
                 }
@@ -64,7 +61,7 @@
     }
 }
 
-@media only screen and (min-aspect-ratio: 700/760) {
+@media only screen and (min-width: #{$medium-width}) {
     .projects-page {
         .projects-inner {
             width: 55vw;

@@ -1,13 +1,4 @@
 .projects-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #24252a;
 }
 
@@ -19,8 +10,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 14vh;
-  padding-bottom: 4em;
+  padding-top: calc(65px + 10px);
   margin-inline: auto;
   background-color: #f8f8f8;
   width: 90vw;
@@ -35,23 +25,24 @@
 
 .projects-page .projects-inner .projects-text h1 {
   color: #363535;
-  font-size: 2.6vh;
+  font-size: 34px;
+  font-weight: 900;
 }
 
 .projects-page .projects-inner .projects-text h2 {
   color: #363535;
-  font-size: 2.2vh;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 400;
 }
 
 .projects-page .projects-inner .projects-text h3 {
-  font-weight: 400;
-  font-size: 1.8vh;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .projects-page .projects-inner .projects-text h4 {
-  font-weight: 400;
-  font-size: 1.8vh;
+  font-weight: 500;
+  font-size: 24px;
   color: #313131;
 }
 
@@ -69,13 +60,13 @@
 
 .projects-page .projects-inner .projects-text .project .project-title {
   color: #363535;
-  font-size: 2vh;
+  font-size: 26px;
   font-weight: 600;
   -webkit-text-decoration: underline solid #89abb6;
           text-decoration: underline solid #89abb6;
 }
 
-@media only screen and (min-aspect-ratio: 700 / 760) {
+@media only screen and (min-width: 700px) {
   .projects-page .projects-inner {
     width: 55vw;
   }

@@ -1,6 +1,45 @@
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 32px;
+  text-align: left;
+}
+
+#header-break {
+  height: calc(65px + 10px);
+}
+
 #background-skills {
   background-color: #f8f8f8;
-  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#background-skills .download-button {
+  color: #f8f8f8;
+  width: 180px;
+  background: #24252a;
+  background: linear-gradient(135deg, #24252a 0%, #3e3f41 100%);
+  -webkit-box-shadow: 2px 2px 3px #636363;
+          box-shadow: 2px 2px 3px #636363;
 }
 
 #background-skills #background-skills-inner {
@@ -20,37 +59,29 @@
 }
 
 #background-skills #background-skills-inner #resume-link {
-  padding-top: 10vh;
+  padding-top: calc(65px + 10px);
 }
 
 #background-skills #background-skills-inner .info {
-  font-size: 2.5vh;
   width: 80vw;
-}
-
-#background-skills #background-skills-inner .info h4 {
-  font-size: 3.2vh;
-  text-align: center;
+  text-align: left;
 }
 
 #background-skills #background-skills-inner .info h5 {
-  font-size: 2.6vh;
+  font-size: 22px;
   font-weight: 600;
   margin: 0;
 }
 
 #background-skills #background-skills-inner .info p {
-  font-size: 2.5vh;
-  text-align: center;
+  font-size: 20px;
 }
 
 #background-skills #background-skills-inner .info ul {
-  font-size: 2.5vh;
+  font-size: 20px;
 }
 
 #work-experience {
-  background-color: #24252a;
-  color: #f8f8f8;
   margin-inline: auto;
 }
 
@@ -63,53 +94,16 @@
 }
 
 #work-experience #work .info-group h4 {
-  text-align: center;
-  font-size: 3.2vh;
+  color: #f8f8f8;
 }
 
-#work-experience #work .info-group #jobs .job h1 {
-  font-size: 3.2vh;
+#work-experience #work .info-group #jobs .job {
+  margin: 0;
   color: #89abb6;
-  margin: 0;
-}
-
-#work-experience #work .info-group #jobs .job h2 {
-  margin: 0;
-  font-size: 2.8vh;
-  color: #9cacb1;
 }
 
 #work-experience #work .info-group #jobs .job h3 {
   color: #f8f8f8;
-  font-size: 2.5vh;
   font-weight: 200;
-}
-
-@media only screen and (min-aspect-ratio: 760 / 760) {
-  #background-skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #background-skills #background-skills-inner {
-    width: 75vw;
-  }
-  #background-skills #background-skills-inner .info {
-    width: 50vw;
-  }
-  #work-experience #work {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vw;
-  }
-  .to-top {
-    display: block;
-  }
 }
 /*# sourceMappingURL=resume.css.map */

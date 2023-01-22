@@ -6,8 +6,6 @@ html {
 }
 
 body {
-  width: 100%;
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,9 +15,23 @@ body {
           flex-direction: column;
 }
 
+#resume-button {
+  background-color: #ddd;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #363535;
+  width: 150px;
+  margin-top: 2vh;
+}
+
 #intro-header {
-  padding-top: 12vh;
-  padding-bottom: 2vh;
+  padding-top: calc(65px + 10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,48 +68,31 @@ body {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  max-width: 85vw;
-  margin-left: 3vw;
-  padding-bottom: 3vh;
+  max-width: 85%;
+  padding-bottom: 15px;
 }
 
 #intro-header #intro-inner #intro-text #name-intro {
-  font-size: 3vh;
+  font-size: 20px;
 }
 
 #intro-header #intro-inner #intro-text #full-name {
-  font-size: 6vh;
+  font-size: 40px;
 }
 
 #intro-header #intro-inner #intro-text #position-intro {
-  font-size: 4vh;
+  font-size: 27px;
   color: #f8f8f8;
 }
 
 #intro-header #intro-inner #intro-text #skills {
-  font-size: 2vh;
+  font-size: 13px;
   color: #a7a7a7;
-  line-height: 2.8vh;
-}
-
-#intro-header #intro-inner #resume-button {
-  background-color: #ddd;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 24px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #363535;
-  width: 150px;
-  margin-top: 2vh;
+  line-height: 18px;
 }
 
 #info-boxes {
-  margin-top: 40px;
+  margin-top: 5px;
   margin-inline: auto;
 }
 
@@ -182,11 +177,10 @@ body {
   background-color: #dddddd;
 }
 
-#bottom-space {
-  height: 3vh;
-}
-
 @media only screen and (min-width: 700px) {
+  #intro-inner {
+    margin-left: -15vw;
+  }
   #info-boxes {
     padding-left: 7.5vw;
   }
@@ -205,8 +199,6 @@ body {
   }
   #info-boxes .info-box {
     width: 40vw;
-    background-color: pink;
-    margin-top: 25px;
     margin-right: 5vw;
   }
 }
@@ -214,30 +206,10 @@ body {
 @media only screen and (min-width: 950px) {
   #info-boxes {
     padding: 0;
-    margin: 0;
-    margin-inline: auto;
-  }
-  #info-boxes #info-box-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   #info-boxes .info-box {
     width: 30vw;
     margin-inline: 1vw;
-    background-color: pink;
-    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */
