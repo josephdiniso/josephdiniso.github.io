@@ -27,14 +27,15 @@ body {
     color: $light-background-text;
 
     width: 150px;
-    margin-top: 2vh;
+    margin-top: 15px;
 }
 
 #intro-header {
     padding-top: $header-height-plus-space;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 100%;
     background-color: $header-color;
 
     border-bottom: 1px solid $border-color;
@@ -43,6 +44,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-inline: auto;
 
         #intro-text {
             flex-direction: column;
@@ -109,11 +111,6 @@ body {
         margin-bottom: 25px;
         background-color: lightblue;
         box-shadow: 4px 4px 8px rgb(0, 0, 0);
-
-        #profilepic {
-            width: 100px;
-            margin-left: 25px;
-        }
     }
 
     #first-info-box {
@@ -149,9 +146,29 @@ body {
     }
 }
 
+#profilepic {
+    height: 400px;
+    margin-right: 40px;
+    margin-left: auto;
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    #profilepic {
+        display: unset;
+    }
+}
+
 @media only screen and (min-width: #{$medium-width}) {
+    #profilepic {
+        height: 325px;
+    }
+    #intro-header {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
     #intro-inner {
-        margin-left: -15vw;
+        margin-inline: unset;
     }
     #info-boxes {
         padding-left: 7.5vw;
@@ -171,6 +188,14 @@ body {
 }
 
 @media only screen and (min-width: #{$large-width}) {
+    #profilepic {
+        height: 400px;
+        display: unset;
+    }
+    #intro-header {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
     #info-boxes {
         padding: 0;
 
