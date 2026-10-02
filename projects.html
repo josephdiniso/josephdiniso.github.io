@@ -7,23 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="Images/icon.png">
+    <link href="css/utilities.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/projects.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
-        <a href="index.html" id="header-text">HOME</a>
-        <nav id="header-nav">
+        <a href="index.html" id="header-text">Joseph DiNiso</a>
+        <nav id="header-nav" aria-label="Main navigation">
             <ul>
-                <li><a class="header-link" href="#">PROJECTS</a></li>
-                <li><a class="header-link" href="resume.html">CV</a></li>
-                <li><a class="header-link" href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+                <li><a class="header-link" href="index.html">Home</a></li>
+                <li><a class="header-link" href="projects.html" aria-current="page">Projects</a></li>
+                <li><a class="header-link" href="resume.html">Resume</a></li>
+                <li class="external-nav"><a class="header-link" href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +45,7 @@
                     </h3>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/Drumz">Drumz</a>
-                        <h4>-Fall 2021</h4>
+                        <h4>Fall 2021</h4>
                         <h3>
                             Final project for ECE4554, Computer Vision. This is an augmented reality
                             drum simulator in which a user calibrates two colored sharpies to the computer and
@@ -52,7 +54,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/DailyUpdate">DailyUpdate</a>
-                        <h4>-Spring 2022</h4>
+                        <h4>Spring 2022</h4>
                         <h3>
                             Email service I created to automatically send me a morning update. Current information
                             includes weather for the day, my schedule, and my planned workout. Future work will include
@@ -62,7 +64,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/YouQR">YouQR</a>
-                        <h4>-Spring 2021</h4>
+                        <h4>Spring 2021</h4>
                         <h3>
                             A QR code scanner built in Python as a final project for ECE4580, Digital Image Processing.
                             Using computer vision techniques we generated a QR code scanner that reads a series of
@@ -74,7 +76,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/PySnake">PySnake</a>
-                        <h4>-Fall 2020</h4>
+                        <h4>Fall 2020</h4>
                         <h3>
                             Originally built simply to learn more about Python and PyGame, by building the classic game
                             Snake, I eventually bridged out and linked this to a Q-Learning model which trains an agent
@@ -84,7 +86,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://josephdiniso.github.io">This Site</a>
-                        <h4>-Current</h4>
+                        <h4>Current</h4>
                         <h3>
                             I created this website as a way to showcase my projects and learn more about basic web
                             development. Over the past few years I have continually changed this website as I refine my
@@ -94,7 +96,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/MazeSolver">Maze Solver</a>
-                        <h4>-Fall 2020</h4>
+                        <h4>Fall 2020</h4>
                         <h3>
                             Maze solving algorithm written in C++ for ECE 2574, Data Structures & Algorithms in 2020.
                             Uses the backtracking algorithm to find a solution.
@@ -102,7 +104,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/CTac">TicTacToe AI</a>
-                        <h4>-Fall 2020</h4>
+                        <h4>Fall 2020</h4>
                         <h3>
                             Simple AI for TicTacToe written in C++ for ECE 2574. Uses the minimax algorithm to find
                             optimal moves. As a further iteration I added a user interface with the algorithm so that a
@@ -111,7 +113,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/RayTracer">RayTracer</a>
-                        <h4>-Fall 2020</h4>
+                        <h4>Fall 2020</h4>
                         <h3>
                             Very barebones ray tracer also written for ECE 2574.
                         </h3>
@@ -125,14 +127,14 @@
                     </h3>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/Snowfall">Snowfall</a>
-                        <h4>-Fall 2020</h4>
+                        <h4>Fall 2020</h4>
                         <h3>
                             Very simple Python implementation in PyGame to simulate snow falling.
                         </h3>
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/AnagramSolver">Anagram Solver</a>
-                        <h4>-Spring 2020</h4>
+                        <h4>Spring 2020</h4>
                         <h3>
                             iOS Anagrams is a GamePigeon game in which a user is given six random letters and must
                             make as many words from those letters as possible in one minute. Longer words yield
@@ -144,7 +146,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/PyTetris">PyTetris</a>
-                        <h4>-Summer 2020</h4>
+                        <h4>Summer 2020</h4>
                         <h3>
                             Early exploration into PyGame, written in 2020. This project is a simple Tetris clone
                             with a few bugs.
@@ -152,7 +154,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/PyPong">PyPong</a>
-                        <h4>-Summer 2020</h4>
+                        <h4>Summer 2020</h4>
                         <h3>
                             Another exploration into PyGame, written in 2020. Originally this was a locally played game
                             but I began to try to make it online multiplayer using a server I hosted. Since then it has
@@ -161,7 +163,7 @@
                     </div>
                     <div class="project">
                         <a class="project-title" target="_blank" rel="noopener noreferrer" href="https://github.com/josephdiniso/RouteFinder">Route Finder</a>
-                        <h4>-Fall 2020</h4>
+                        <h4>Fall 2020</h4>
                         <h3>
                             Heuristic route finding algorithm written in C++ for ECE 2574.
                         </h3>

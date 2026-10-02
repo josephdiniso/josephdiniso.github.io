@@ -1,73 +1,112 @@
-@import "utilities.scss";
+@use "utilities" as *;
 
 .projects-page {
-    background-color: $header-color;
+    min-height: 100vh;
+    padding: calc(#{$header-height} + 40px) 24px 96px;
 
     .projects-inner {
-        display: flex;
-        flex-direction: column;
-        padding-top: $header-height-plus-space;
-        margin-inline: auto;
-        background-color: $light-background;
-        width: 90vw;
-        border-left: 1px solid $border-color;
-        border-right: 1px solid $border-color;
+        width: min(860px, 100%);
+        margin: 0 auto;
+    }
 
-        .projects-text {
-            margin-inline: auto;
-            width: 80vw;
-            h1 {
-                color: $light-background-text;
-                font-size: 34px;
-                font-weight: 900;
+    .projects-text {
+        > h1 {
+            margin: 0;
+            color: $text-primary;
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: clamp(42px, 7vw, 64px);
+            font-weight: 400;
+            letter-spacing: -0.035em;
+            line-height: 1.1;
+        }
+
+        > h3 {
+            max-width: 680px;
+            margin: 18px 0 54px;
+            color: $text-secondary;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .project-section {
+        margin-top: 46px;
+
+        > h2 {
+            margin: 0 0 8px;
+            color: $text-primary;
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        > h3 {
+            margin: 0 0 22px;
+            color: $text-secondary;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 2px 20px;
+        margin-top: 0;
+        padding: 20px 0 22px;
+        border: 0;
+        border-top: 1px solid $border;
+
+        .project-title {
+            color: $text-primary;
+            font-family: "DM Serif Display", Georgia, serif;
+            font-size: 22px;
+            font-weight: 400;
+            text-decoration: none;
+            text-decoration-color: $accent;
+            text-decoration-line: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+
+            &:hover {
+                color: $accent;
             }
+        }
 
-            h2 {
-                color: $light-background-text;
-                font-size: 35px;
-                font-weight: 400;
-            }
+        h4 {
+            margin: 3px 0 0;
+            color: $accent;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
 
-            h3 {
-                font-size: 22px;
-                font-weight: 300;
-            }
-
-            h4 {
-                font-weight: 500;
-                font-size: 24px;
-                color: rgb(49, 49, 49);
-            }
-
-            p {
-                color: $light-background-text;
-            }
-
-            .project-section {
-                margin-top: 1vh;
-            }
-
-            .project {
-                margin-top: 1vh;
-
-                .project-title {
-                    color: $light-background-text;
-                    font-size: 26px;
-                    font-weight: 600;
-                    text-decoration: underline solid $dark-background-header;
-                }
-            }
+        h3 {
+            grid-column: 1 / -1;
+            margin: 8px 0 0;
+            color: $text-secondary;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.75;
         }
     }
 }
 
-@media only screen and (min-width: #{$medium-width}) {
+@media (max-width: 560px) {
     .projects-page {
-        .projects-inner {
-            width: 55vw;
+        padding: calc(#{$header-height} + 32px) 20px 64px;
 
-            .projects-text {
-                width: 50vw;
+        .project {
+            grid-template-columns: 1fr;
+            gap: 4px;
+            padding: 18px 0 20px;
+
+            h4 {
+                grid-row: 2;
+            }
+
+            h3 {
+                grid-row: 3;
             }
         }
     }

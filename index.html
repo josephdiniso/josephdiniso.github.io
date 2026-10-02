@@ -6,21 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="Images/icon.png">
+    <link href="css/utilities.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
-        <a href="index.html" id="header-text">HOME</a>
-        <nav id="header-nav">
+        <a href="index.html" id="header-text">Joseph DiNiso</a>
+        <nav id="header-nav" aria-label="Main navigation">
             <ul>
-                <li><a class="header-link" href="projects.html">PROJECTS</a></li>
-                <li><a class="header-link" href="resume.html">CV</a></li>
-                <li><a class="header-link" href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+                <li><a class="header-link" href="index.html" aria-current="page">Home</a></li>
+                <li><a class="header-link" href="projects.html">Projects</a></li>
+                <li><a class="header-link" href="resume.html">Resume</a></li>
+                <li class="external-nav"><a class="header-link" href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
     </header>
@@ -28,23 +30,23 @@
         <div id="intro-inner">
             <div id="intro-text">
                 <div id="name-intro">
-                    HELLO THERE 👋, I'M
+                    HEY THERE! I'M
                 </div>
                 <div id="full-name">
-                    JOSEPH DiNISO
+                    Joseph DiNiso
                 </div>
                 <div id="position-intro">
                     SOFTWARE ENGINEER
                 </div>
                 <div id="skills">
-                    Python • C++ • C# • Azure • Rust • Linux • PowerShell • + Plus Much More
+                    C# • Distributed Systems • Python • Azure • Plus Much More
                     <br>
-                    Currently working in Seattle, WA 📍
+                    Currently working in Redmond, WA 📍
                 </div>
-                <a id="resume-button" href="resume.html">VIEW MY CV</a>
+                <a id="resume-button" href="resume.html">VIEW MY RESUME</a>
             </div>
         </div>
-        <img id="profilepic" alt="Profile picture of myself in front of a waterfall" src="Images/cropped.png">
+        <img id="profilepic" alt="Joseph standing beside a waterfall" src="Images/portrait.jpg" width="900" height="1200">
     </div>
     <div id="info-boxes">
         <div id="info-box-container">
@@ -57,10 +59,10 @@
                         Check out some of the projects I've worked on:
                     </h3>
                     <ul>
-                        <li><a href="https://github.com/josephdiniso/Drumz">Drumz</a> - Virtual reality drumset</li>
-                        <li><a href="https://github.com/josephdiniso/YouQR">YouQR</a> - Custom QR code maker for YouTube
+                        <li><a href="https://github.com/josephdiniso/Drumz" target="_blank" rel="noopener noreferrer">Drumz</a> - Virtual reality drumset</li>
+                        <li><a href="https://github.com/josephdiniso/YouQR" target="_blank" rel="noopener noreferrer">YouQR</a> - Custom QR code maker for YouTube
                             video links</li>
-                        <li><a href="https://github.com/josephdiniso/PySnake">PySnake</a> - Snake made with PyGame
+                        <li><a href="https://github.com/josephdiniso/PySnake" target="_blank" rel="noopener noreferrer">PySnake</a> - Snake made with PyGame
                             trained with Q learning</li>
                     </ul>
                     <h3>
@@ -71,23 +73,28 @@
             <div class="info-box" id="second-info-box">
                 <div class="info-box-contents">
                     <h1>
-                        My CV
+                        My Resume
                     </h1>
                     <h3>
-                        Click <a href="resume.html">here</a> to see my CV
+                        Click <a href="resume.html">here</a> to see my resume
                     </h3>
                     <ul>
                         <li>
-                            Software Engineer I at Microsoft
+                            Software Engineer II at Microsoft
                         </li>
                         <li>
                             B.S. in Computer Engineering from Virginia Tech (GPA 3.85)
+                            <small class="degree-focus">Focus in Machine Learning; secondary focus in Networking</small>
                         </li>
                         <li>
-                            Proficient with Python, C++, C#
+                            M.S. in Computer Science from Georgia Tech (GPA 3.90)
+                            <small class="degree-focus">Focus in Software Systems</small>
                         </li>
                         <li>
-                            Experienced with Rust, PowerShell, computer vision, machine learning
+                            Proficient with C# and Python
+                        </li>
+                        <li>
+                            Experienced with Rust and C++
                         </li>
                     </ul>
                 </div>
@@ -99,10 +106,10 @@
                     </h1>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/josephdiniso/">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/josephdiniso/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </li>
                         <li>
-                            <a href="https://github.com/josephdiniso">GitHub</a>
+                            <a href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </li>
                         <li>
                             E-Mail: josephdiniso (at) gmail (dot) com
