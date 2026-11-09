@@ -1,0 +1,71 @@
+<interactive-vector>
+    <label>
+        Angle: <output>45</output> degrees
+        <input type="range" min="0" max="360" value="45" aria-label="Vector angle" />
+    </label>
+    <svg viewBox="0 0 320 240" role="img" aria-label="A unit vector at 45 degrees">
+        <path d="M40 120H280 M160 20V220" stroke="var(--border)" />
+        <circle cx="160" cy="120" r="90" fill="none" stroke="var(--border)" />
+        <line x1="160" y1="120" x2="223.64" y2="56.36" stroke="var(--accent)" stroke-width="3" />
+        <circle class="endpoint" cx="223.64" cy="56.36" r="5" fill="var(--accent)" />
+    </svg>
+    <p>Coordinates: <span class="coordinates">(0.71, 0.71)</span></p>
+</interactive-vector>
+
+<script>
+    class InteractiveVector extends HTMLElement {
+        connectedCallback() {
+            const input = this.querySelector("input")!;
+            const output = this.querySelector("output")!;
+            const svg = this.querySelector("svg")!;
+            const line = this.querySelector("line")!;
+            const endpoint = this.querySelector(".endpoint")!;
+            const coordinates = this.querySelector(".coordinates")!;
+
+            const update = () => {
+                const angle = Number(input.value);
+                const radians = angle * Math.PI / 180;
+                const x = Math.cos(radians);
+                const y = Math.sin(radians);
+                const cx = String(160 + 90 * x);
+                const cy = String(120 - 90 * y);
+                output.value = String(angle);
+                line.setAttribute("x2", cx);
+                line.setAttribute("y2", cy);
+                endpoint.setAttribute("cx", cx);
+                endpoint.setAttribute("cy", cy);
+                coordinates.textContent = `(${x.toFixed(2)}, ${y.toFixed(2)})`;
+                svg.setAttribute("aria-label", `A unit vector at ${angle} degrees`);
+            };
+
+            input.addEventListener("input", update);
+            update();
+        }
+    }
+
+    customElements.define("interactive-vector", InteractiveVector);
+</script>
+
+<style>
+    interactive-vector {
+        display: block;
+        margin: 28px 0;
+        padding: 24px;
+        border: 1px solid var(--border);
+        background: var(--surface-background);
+        border-radius: 4px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+        accent-color: var(--accent);
+    }
+
+    svg {
+        display: block;
+        width: 320px;
+        margin: 16px auto;
+    }
+</style>

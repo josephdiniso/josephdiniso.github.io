@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import "../styles/main.scss";
+---
 
-<head>
-    <title>Joseph DiNiso</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="Images/icon.png">
-    <link href="css/utilities.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <header id="header">
-        <a href="index.html" id="header-text">Joseph DiNiso</a>
-        <nav id="header-nav" aria-label="Main navigation">
-            <ul>
-                <li><a class="header-link" href="index.html" aria-current="page">Home</a></li>
-                <li><a class="header-link" href="projects.html">Projects</a></li>
-                <li><a class="header-link" href="resume.html">Resume</a></li>
-                <li class="external-nav"><a class="header-link" href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
+<SiteLayout>
     <div id="intro-header">
         <div id="intro-inner">
             <div id="intro-text">
@@ -46,7 +24,11 @@
                 <a id="resume-button" href="resume.html">VIEW MY RESUME</a>
             </div>
         </div>
-        <img id="profilepic" alt="Joseph standing beside a waterfall" src="Images/portrait.jpg" width="1650" height="2200">
+        <img id="profilepic" alt="Joseph standing beside a waterfall"
+            src="Images/portrait-720.jpg"
+            srcset="Images/portrait-360.jpg 360w, Images/portrait-720.jpg 720w, Images/portrait-1080.jpg 1080w"
+            sizes="(max-width: 431px) 58vw, (max-width: 806px) 250px, (max-width: 1161px) 31vw, 360px"
+            width="720" height="960">
     </div>
     <div id="info-boxes">
         <div id="info-box-container">
@@ -117,5 +99,4 @@
         </div>
     </div>
 
-</body>
-</html>
+</SiteLayout>

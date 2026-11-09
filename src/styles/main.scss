@@ -6,10 +6,8 @@
     justify-content: space-between;
     gap: clamp(48px, 10vw, 144px);
     width: min(1120px, calc(100% - 48px));
-    min-height: min(720px, 100svh);
     margin: 0 auto;
-    padding: calc(#{$header-height} + 76px) 0 84px;
-    border-bottom: 1px solid $border;
+    padding: calc(#{$header-height} + 40px) 0 32px;
 
     #intro-inner {
         flex: 1;
@@ -90,7 +88,7 @@
 #info-boxes {
     width: min(1120px, calc(100% - 48px));
     margin: 0 auto;
-    padding: 70px 0 100px;
+    padding: 32px 0 100px;
 
     #info-box-container {
         display: grid;
@@ -142,8 +140,7 @@
 
 @media (max-width: 850px) {
     #intro-header {
-        min-height: auto;
-        padding-top: calc(#{$header-height} + 72px);
+        padding-top: calc(#{$header-height} + 32px);
     }
 
     #info-boxes #info-box-container {
@@ -157,26 +154,40 @@
         align-items: flex-start;
         gap: 34px;
         width: calc(100% - 40px);
-        padding: calc(#{$header-height} + 56px) 0 52px;
+        padding: calc(#{$header-height} + 24px) 0 24px;
+
+        #intro-inner {
+            width: 100%;
+        }
+
+        #resume-button {
+            display: flex;
+            width: fit-content;
+            margin-inline: auto;
+        }
     }
 
     #profilepic {
-        align-self: flex-end;
+        align-self: center;
         width: min(58vw, 250px);
     }
 
     #info-boxes {
         width: calc(100% - 40px);
-        padding: 32px 0 60px;
+        padding: 16px 0 60px;
 
         #info-box-container {
             grid-template-columns: 1fr;
-            gap: 34px;
+            gap: 8px;
         }
 
         .info-box {
             min-height: 0;
-            padding: 24px;
+            padding: 16px 24px 0;
+        }
+
+        #second-info-box {
+            order: -1;
         }
     }
 }

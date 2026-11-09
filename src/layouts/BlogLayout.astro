@@ -1,0 +1,90 @@
+---
+import SiteLayout from "./SiteLayout.astro";
+
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<SiteLayout title={`${title} | Joseph DiNiso`} description={description}>
+    <main class="blog-page">
+        <slot />
+    </main>
+</SiteLayout>
+
+<style is:global>
+    .blog-page {
+        width: min(760px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: calc(var(--header-height) + 48px) 0 80px;
+    }
+
+    .blog-page h1, .blog-page h2, .blog-page h3 {
+        font-family: "DM Serif Display", Georgia, serif;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .blog-page h1 {
+        margin: 0 0 20px;
+        font-size: clamp(36px, 6vw, 54px);
+    }
+
+    .blog-page h2 {
+        margin-top: 36px;
+        font-size: 28px;
+    }
+
+    .blog-page p, .blog-page li {
+        color: var(--text-secondary);
+    }
+
+    .blog-page time {
+        color: var(--text-secondary);
+        font-size: 14px;
+    }
+
+    .blog-page img, .blog-page svg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .blog-page pre {
+        padding: 20px;
+        overflow-x: auto;
+        border-radius: 4px;
+    }
+
+    .blog-page :not(pre) > code {
+        padding: 2px 5px;
+        background: var(--surface-background);
+        overflow-wrap: anywhere;
+    }
+
+    .post-list {
+        margin: 32px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .post-list li {
+        padding: 24px 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .post-list h2 {
+        margin: 8px 0;
+    }
+
+    .post-list p {
+        margin: 0;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: 28px;
+    }
+</style>

@@ -1,0 +1,31 @@
+---
+import "../styles/header.scss";
+
+const links = [
+    { href: "/index.html", label: "Home" },
+    { href: "/projects.html", label: "Projects" },
+    { href: "/blog/", label: "Blog" },
+    { href: "/resume.html", label: "Resume" },
+];
+
+function isCurrent(href: string) {
+    const path = Astro.url.pathname;
+    if (href === "/index.html") return path === "/" || path === href;
+    if (href === "/blog/") return path === "/blog" || path.startsWith(href);
+    return path === href;
+}
+---
+
+<header id="header">
+    <a href="/index.html" id="header-text">Joseph DiNiso</a>
+    <nav id="header-nav" aria-label="Main navigation">
+        <ul>
+            {links.map(({ href, label }) => (
+                <li><a class="header-link" href={href} aria-current={isCurrent(href) ? "page" : undefined}>{label}</a></li>
+            ))}
+            <li class="external-nav">
+                <a class="header-link" href="https://github.com/josephdiniso" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+</header>
